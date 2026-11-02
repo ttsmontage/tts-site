@@ -84,3 +84,14 @@
 .step-icon svg{width:58px;height:58px;fill:none;stroke:#e8e8e4;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:.88}
 .step-visual svg{max-width:none}
 @media(max-width:800px){.step-visual{height:68px;margin-bottom:14px}}
+
+
+/* Accès direct au portfolio : réduire l'espace au-dessus de la sélection */
+#portfolio {
+  scroll-margin-top: 16px;
+  padding-top: 42px;
+}
+
+@media (max-width: 800px) {
+  #portfolio { padding-top: 34px; }
+}
