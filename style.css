@@ -117,3 +117,13 @@
 .contact-submit{width:100%;border:0;margin-top:10px;cursor:pointer}
 .contact-form-note{font-size:10px!important;line-height:1.6;margin:3px 0 0!important;color:#777!important}
 @media(max-width:800px){.contact-direct{max-width:none}.contact-panel{padding:22px}}
+
+
+/* Outils discrets pour remplacer les vidéos des slides du portfolio */
+.portfolio-slide-tools{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;width:100%;margin-top:10px;opacity:.72;transition:opacity .2s}
+.carousel-slide.is-active .portfolio-slide-tools,.portfolio-slide-tools:focus-within{opacity:1}
+.portfolio-upload-label,.portfolio-reset-video{display:inline-flex;align-items:center;gap:6px;border:1px solid #4b4b48;background:#171717;color:#c9c8c3;padding:8px 11px;font:9px var(--mono);cursor:pointer}
+.portfolio-upload-label:hover,.portfolio-reset-video:hover{border-color:#aaa;color:#fff}
+.portfolio-upload-label input{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.portfolio-reset-video{background:transparent;color:#888}
+.video-frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#080808}
