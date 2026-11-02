@@ -1,0 +1,43 @@
+name: Normalize portfolio videos
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Convert portfolio MP4s to browser-compatible H.264/AAC
+        run: |
+          set -e
+          for file in v24044gl0000d58gi0nog65kpct5o0rg.mp4 v24044gl0000d5d4abnog65m4o894060.mp4 v24044gl0000d5ho197og65p1eh2um5g.mp4; do
+            if [ -f "$file" ]; then
+              echo "Normalizing $file"
+              ffmpeg -y -i "$file" -map 0:v:0 -map 0:a? -c:v libx264 -preset medium -crf 23 -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart "${file%.mp4}.normalized.mp4"
+              mv "${file%.mp4}.normalized.mp4" "$file"
+            fi
+          done
+
+      - name: Commit converted videos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add v24044gl0000d58gi0nog65kpct5o0rg.mp4 v24044gl0000d5d4abnog65m4o894060.mp4 v24044gl0000d5ho197og65p1eh2um5g.mp4
+          if git diff --cached --quiet; then
+            echo "No video changes to commit."
+          else
+            git commit -m "Normalize portfolio videos for browser playback [skip ci]"
+            git push
+          fi
