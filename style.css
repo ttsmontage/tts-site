@@ -39,3 +39,10 @@
 .portfolio-note{margin-top:36px}
 @media(max-width:800px){.portfolio-formats{gap:42px}.format-heading{align-items:center}.video-placeholder.vertical{width:min(100%,300px)}.carousel-slide.is-next{transform:translateX(42px) scale(.93)}.carousel-slide.is-third{transform:translateX(80px) scale(.86)}}
 @media(max-width:430px){.format-heading h3{font-size:21px}.format-heading p{font-size:10px}.carousel-controls{gap:7px}.carousel-controls button{width:34px;height:34px}.slide-caption{display:grid;gap:3px}.slide-caption span{text-align:left}.carousel-slide.is-next{transform:translateX(32px) scale(.92)}.carousel-slide.is-third{transform:translateX(62px) scale(.84)}}
+
+
+/* Centrage des piles de vidéos dans le portfolio */
+.carousel-slide{display:flex;flex-direction:column;align-items:center}
+.carousel-slide .video-placeholder,
+.carousel-slide .video-frame{margin-inline:auto}
+.carousel-slide .slide-caption{width:min(100%,820px);margin-inline:auto}
