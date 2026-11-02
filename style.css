@@ -25,6 +25,7 @@
 .format-group:not(:last-child) .carousel-slide{width:min(100%,250px)}
 .carousel-slide.is-prev{z-index:4;transform:translateX(-70%) scale(.96);opacity:1}
 .carousel-slide.is-next{z-index:4;transform:translateX(70%) scale(.96);opacity:1}
+.format-group[aria-label="Format long"] .carousel-slide.is-next{transform:translateX(90%) scale(.94);opacity:1}
 .carousel-slide.is-prev2{z-index:3;transform:translateX(-150%) scale(.92);opacity:1}
 .carousel-slide.is-next2{z-index:3;transform:translateX(150%) scale(.92);opacity:1}
 .carousel-slide.is-prev3{z-index:2;transform:translateX(-240%) scale(.88);opacity:1}
