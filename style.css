@@ -47,3 +47,8 @@
 .carousel-slide .video-placeholder,
 .carousel-slide .video-frame{margin-inline:auto}
 .carousel-slide .slide-caption{width:min(100%,820px);margin-inline:auto}
+
+
+/* One Story reprend le format vertical 9:16 */
+.video-frame.vertical{width:min(100%,330px);aspect-ratio:9/16}
+@media(max-width:800px){.video-frame.vertical{width:min(100%,300px)}}
