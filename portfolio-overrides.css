@@ -74,7 +74,8 @@
 .testimonial-slot {
   position: relative;
   min-height: 190px;
-  border: 1px dashed #555;
+  border: 1px solid #555;
+  border-radius: 12px;
   background: #111;
   display: flex;
   align-items: center;
