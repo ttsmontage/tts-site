@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250">
+<rect width="900" height="250" rx="10" fill="#1b1b1f"/>
+<circle cx="46" cy="42" r="28" fill="#171719" stroke="#f2c400" stroke-width="5"/>
+<circle cx="46" cy="42" r="21" fill="#7b4a32"/><circle cx="38" cy="35" r="3" fill="#f1d0b0"/><circle cx="54" cy="35" r="3" fill="#f1d0b0"/><path d="M35 49 Q46 58 57 49" fill="none" stroke="#f1d0b0" stroke-width="3"/>
+<text x="85" y="31" fill="#f2f2f2" font-family="Arial,sans-serif" font-size="19" font-weight="700">Homy</text><text x="143" y="31" fill="#999" font-family="Arial,sans-serif" font-size="13">13/04/2026 23:37</text>
+<text x="85" y="64" fill="#f2f2f2" font-family="Arial,sans-serif" font-size="20">Ouais au taff pendant ma pause je regarde un peu 😉 j'ai été grave surpris !</text>
+<text x="85" y="93" fill="#f2f2f2" font-family="Arial,sans-serif" font-size="20">Trop bonne idée au final d'avoir fait ces comptes là franchement tu gères !</text>
+<rect x="85" y="119" width="67" height="39" rx="10" fill="#252c5c" stroke="#5865f2"/><text x="98" y="146" font-size="22">🔥</text><text x="129" y="145" fill="#b9c0ff" font-family="Arial,sans-serif" font-size="17" font-weight="700">1</text>
+<rect x="160" y="119" width="47" height="39" rx="10" fill="#292a2f"/><text x="173" y="146" font-size="21">🙂</text>
+</svg>
