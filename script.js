@@ -117,3 +117,25 @@ if (testimonialArea) {
   };
   render();
 }
+
+
+/* Formulaire de contact : prépare un e-mail adressé à TTS. */
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!contactForm.reportValidity()) return;
+    const data = new FormData(contactForm);
+    const subject = String(data.get('subject') || '').trim();
+    const body = [
+      'Bonjour,',
+      '',
+      String(data.get('message') || '').trim(),
+      '',
+      '—',
+      'Nom : ' + String(data.get('name') || '').trim(),
+      'E-mail : ' + String(data.get('email') || '').trim()
+    ].join('\\n');
+    window.location.href = 'mailto:ttsmontagepro@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  });
+}
