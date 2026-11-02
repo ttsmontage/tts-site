@@ -13,8 +13,52 @@
   grid-column: 2;
 }
 
+/* Retours clients : premières captures de Homy */
+.testimonials .testimonial-empty {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  gap: 20px;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+}
+
+.testimonials .testimonial-empty::before,
+.testimonials .testimonial-empty::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border: 1px solid #343432;
+  border-radius: 14px;
+  background-color: #1b1b1f;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  box-shadow: 0 18px 45px rgba(0,0,0,.18);
+}
+
+.testimonials .testimonial-empty::before {
+  aspect-ratio: 900 / 250;
+  background-image: url("assets/homy-01.svg");
+}
+
+.testimonials .testimonial-empty::after {
+  aspect-ratio: 900 / 170;
+  background-image: url("assets/homy-02.svg");
+}
+
+.testimonials .testimonial-empty > * {
+  display: none;
+}
+
 @media (max-width: 800px) {
   .portfolio-formats .format-group:nth-child(2) {
     grid-column: auto;
+  }
+
+  .testimonials .testimonial-empty {
+    grid-template-columns: 1fr;
   }
 }
