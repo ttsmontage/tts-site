@@ -21,9 +21,11 @@ document.querySelectorAll('[data-carousel]').forEach(carousel => {
   const update = () => {
     slides.forEach((slide, i) => {
       slide.classList.toggle('is-active', i === index);
+      slide.classList.toggle('is-prev', i === index - 1);
       slide.classList.toggle('is-next', i === index + 1);
-      slide.classList.toggle('is-third', i === index + 2);
-      slide.setAttribute('aria-hidden', String(i < index || i > index + 2));
+      slide.classList.toggle('is-prev2', i === index - 2);
+      slide.classList.toggle('is-next2', i === index + 2);
+      slide.setAttribute('aria-hidden', String(Math.abs(i - index) > 2));
     });
     previous.disabled = index === 0;
     next.disabled = index === slides.length - 1;
