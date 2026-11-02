@@ -63,3 +63,57 @@ document.querySelectorAll('[data-carousel]').forEach(carousel => {
   }, {passive:true});
   update();
 });
+
+/* Retours clients : ajout d'images depuis l'explorateur, conservées dans ce navigateur. */
+const testimonialArea = document.querySelector('.testimonial-empty');
+if (testimonialArea) {
+  const storageKey = 'tts-testimonial-images-v1';
+  let saved = [];
+  try { saved = JSON.parse(localStorage.getItem(storageKey) || '[]'); } catch (_) { saved = []; }
+
+  testimonialArea.className = 'testimonial-uploader';
+  testimonialArea.innerHTML = `
+    <div class="testimonial-uploader-head">
+      <div><span class="testimonial-mark">“</span><div><h3>Retours clients</h3><p>Ajoute tes captures directement depuis ton ordinateur. Elles restent enregistrées dans ce navigateur.</p></div></div>
+      <span class="testimonial-tag">AVIS & ÉCHANGES</span>
+    </div>
+    <div class="testimonial-slots" aria-label="Captures de retours clients"></div>
+  `;
+
+  const slots = testimonialArea.querySelector('.testimonial-slots');
+  const render = () => {
+    slots.innerHTML = '';
+    for (let i = 0; i < 4; i++) {
+      const item = saved[i];
+      const slot = document.createElement('div');
+      slot.className = `testimonial-slot${item ? ' has-image' : ''}`;
+      slot.innerHTML = item
+        ? `<img src="${item}" alt="Capture d'un retour client ${i + 1}"><button type="button" class="testimonial-remove" aria-label="Supprimer cette capture">×</button>`
+        : `<input type="file" accept="image/png,image/jpeg,image/webp" aria-label="Ajouter une capture client ${i + 1}"><span class="testimonial-plus">+</span><span class="testimonial-add-label">Ajouter une capture</span>`;
+      if (item) {
+        slot.querySelector('.testimonial-remove').addEventListener('click', e => {
+          e.stopPropagation();
+          saved.splice(i, 1);
+          localStorage.setItem(storageKey, JSON.stringify(saved));
+          render();
+        });
+      } else {
+        const input = slot.querySelector('input');
+        slot.addEventListener('click', () => input.click());
+        input.addEventListener('change', () => {
+          const file = input.files && input.files[0];
+          if (!file || !file.type.startsWith('image/')) return;
+          const reader = new FileReader();
+          reader.onload = () => {
+            saved[i] = reader.result;
+            localStorage.setItem(storageKey, JSON.stringify(saved));
+            render();
+          };
+          reader.readAsDataURL(file);
+        });
+      }
+      slots.appendChild(slot);
+    }
+  };
+  render();
+}
