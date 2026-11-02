@@ -10,3 +10,31 @@ nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
   nav.classList.remove('open');
   toggle.setAttribute('aria-expanded', 'false');
 }));
+document.querySelectorAll('[data-carousel]').forEach(carousel => {
+  const track = carousel.querySelector('.carousel-track');
+  const slides = Array.from(track.children);
+  const group = carousel.closest('.format-group');
+  const previous = group.querySelector('.carousel-prev');
+  const next = group.querySelector('.carousel-next');
+  const count = group.querySelector('.carousel-count');
+  let index = 0;
+  const update = () => {
+    track.style.transform = `translateX(-${index * 100}%)`;
+    previous.disabled = index === 0;
+    next.disabled = index === slides.length - 1;
+    count.textContent = `${String(index + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
+  };
+  previous.addEventListener('click', () => { if(index > 0){ index--; update(); }});
+  next.addEventListener('click', () => { if(index < slides.length - 1){ index++; update(); }});
+  let touchStart = 0;
+  carousel.addEventListener('touchstart', e => { touchStart = e.changedTouches[0].clientX; }, {passive:true});
+  carousel.addEventListener('touchend', e => {
+    const delta = e.changedTouches[0].clientX - touchStart;
+    if(Math.abs(delta) > 45){
+      if(delta < 0 && index < slides.length - 1) index++;
+      if(delta > 0 && index > 0) index--;
+      update();
+    }
+  }, {passive:true});
+  update();
+});
