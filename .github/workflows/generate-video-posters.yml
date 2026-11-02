@@ -21,13 +21,13 @@ jobs:
       - name: Install ffmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
-      - name: Generate thumbnails from 3 seconds into each video
+      - name: Generate thumbnails from 4 seconds into each video
         run: |
           set -e
           for video in *.mp4; do
             [ -f "$video" ] || continue
             poster="${video%.mp4}.jpg"
-            ffmpeg -y -ss 3 -i "$video" -frames:v 1 -vf "scale=720:-2" -q:v 3 "$poster"
+            ffmpeg -y -ss 4 -i "$video" -frames:v 1 -vf "scale=720:-2" -q:v 3 "$poster"
           done
 
       - name: Add poster attributes to portfolio videos
@@ -41,15 +41,15 @@ jobs:
 
           def replace(match):
               tag = match.group(0)
-              src_match = re.search(r'src="([^"]+\.mp4)"', tag)
+              src_match = re.search(r'src="([^"]+\\.mp4)"', tag)
               if not src_match:
                   return tag
               src = src_match.group(1)
               poster = src.rsplit('.', 1)[0] + '.jpg'
-              tag = re.sub(r'\sposter="[^"]*"', '', tag)
+              tag = re.sub(r'\\sposter="[^"]*"', '', tag)
               return tag.replace('<video ', f'<video poster="{poster}" ', 1)
 
-          updated = re.sub(r'<video\b[^>]*>', replace, html)
+          updated = re.sub(r'<video\\b[^>]*>', replace, html)
           path.write_text(updated, encoding='utf-8')
           PY
 
