@@ -23,8 +23,8 @@ document.querySelectorAll('[data-carousel]').forEach(carousel => {
       slide.classList.toggle('is-active', i === index);
       const previousIndex = (index - 1 + slides.length) % slides.length;
       const nextIndex = (index + 1) % slides.length;
-      const isPrevious = i === previousIndex;
-      const isNext = i === nextIndex;
+      const isPrevious = slides.length > 1 && i === previousIndex;
+      const isNext = slides.length > 1 && i === nextIndex;
       slide.classList.toggle('is-prev', isPrevious);
       slide.classList.toggle('is-next', isNext);
       slide.classList.toggle('is-prev2', false);
