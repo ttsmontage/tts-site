@@ -139,3 +139,113 @@ if (contactForm) {
     window.location.href = 'mailto:ttsmontagepro@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
   });
 }
+
+
+/* Portfolio : remplacement local des vidéos de chaque slide (IndexedDB). */
+(() => {
+  const slides = Array.from(document.querySelectorAll('.portfolio [data-carousel] .carousel-slide'));
+  if (!slides.length || !('indexedDB' in window)) return;
+  const DB_NAME = 'tts-portfolio-media';
+  const STORE = 'videos';
+  const openDB = () => new Promise((resolve, reject) => {
+    const request = indexedDB.open(DB_NAME, 1);
+    request.onupgradeneeded = () => request.result.createObjectStore(STORE);
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => reject(request.error);
+  });
+  const withStore = async (mode, action) => {
+    const db = await openDB();
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction(STORE, mode);
+      const req = action(tx.objectStore(STORE));
+      req.onsuccess = () => resolve(req.result);
+      req.onerror = () => reject(req.error);
+      tx.oncomplete = () => db.close();
+      tx.onerror = () => reject(tx.error);
+    });
+  };
+  const setVideo = (slide, blob) => {
+    const frame = slide.querySelector('.video-frame');
+    if (!frame) return;
+    const old = frame.querySelector('video');
+    if (old) URL.revokeObjectURL(old.src);
+    const iframe = frame.querySelector('iframe');
+    if (iframe) iframe.remove();
+    let video = frame.querySelector('video');
+    if (!video) {
+      video = document.createElement('video');
+      video.controls = true;
+      video.playsInline = true;
+      video.preload = 'metadata';
+      frame.appendChild(video);
+    }
+    video.src = URL.createObjectURL(blob);
+    frame.classList.add('has-local-video');
+  };
+  const restore = async () => {
+    for (let i = 0; i < slides.length; i++) {
+      try {
+        const blob = await withStore('readonly', store => store.get('slide-' + i));
+        if (blob) setVideo(slides[i], blob);
+      } catch (error) { console.warn('Vidéo locale non restaurée', error); }
+    }
+  };
+  slides.forEach((slide, i) => {
+    const frame = slide.querySelector('.video-frame');
+    if (!frame) return;
+    const tools = document.createElement('div');
+    tools.className = 'portfolio-slide-tools';
+    const label = document.createElement('label');
+    label.className = 'portfolio-upload-label';
+    label.textContent = '＋ Remplacer la vidéo';
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'video/mp4,video/webm,video/quicktime';
+    input.setAttribute('aria-label', 'Remplacer la vidéo de la slide ' + (i + 1));
+    label.appendChild(input);
+    tools.appendChild(label);
+    const reset = document.createElement('button');
+    reset.type = 'button';
+    reset.className = 'portfolio-reset-video';
+    reset.textContent = 'Restaurer la vidéo du site';
+    tools.appendChild(reset);
+    slide.appendChild(tools);
+    input.addEventListener('change', async () => {
+      const file = input.files && input.files[0];
+      if (!file) return;
+      if (!file.type.startsWith('video/')) { alert('Choisis un fichier vidéo.'); return; }
+      try {
+        await withStore('readwrite', store => store.put(file, 'slide-' + i));
+        setVideo(slide, file);
+      } catch (error) {
+        alert("La vidéo n'a pas pu être enregistrée dans ce navigateur. Essaie un fichier plus léger.");
+        console.error(error);
+      }
+      input.value = '';
+    });
+    reset.addEventListener('click', async () => {
+      try {
+        await withStore('readwrite', store => store.delete('slide-' + i));
+        const video = frame.querySelector('video');
+        if (video) { URL.revokeObjectURL(video.src); video.remove(); }
+        frame.classList.remove('has-local-video');
+        const original = slide.dataset.originalSrc;
+        if (original && !frame.querySelector('iframe')) {
+          const iframe = document.createElement('iframe');
+          iframe.src = original;
+          iframe.title = slide.dataset.originalTitle || 'Vidéo du portfolio';
+          iframe.loading = 'lazy';
+          iframe.allowFullscreen = true;
+          iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+          frame.appendChild(iframe);
+        }
+      } catch (error) { console.error(error); }
+    });
+    const iframe = frame.querySelector('iframe');
+    if (iframe) {
+      slide.dataset.originalSrc = iframe.src;
+      slide.dataset.originalTitle = iframe.title;
+    }
+  });
+  restore();
+})();
