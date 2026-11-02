@@ -17,35 +17,47 @@ document.querySelectorAll('[data-carousel]').forEach(carousel => {
   const previous = group.querySelector('.carousel-prev');
   const next = group.querySelector('.carousel-next');
   const count = group.querySelector('.carousel-count');
+  const filters = group.querySelectorAll('[data-filter]');
   let index = 0;
+  let activeSlides = slides.slice();
   const update = () => {
-    slides.forEach((slide, i) => {
-      slide.classList.toggle('is-active', i === index);
-      const previousIndex = (index - 1 + slides.length) % slides.length;
-      const nextIndex = (index + 1) % slides.length;
-      const isPrevious = slides.length > 1 && i === previousIndex;
-      const isNext = slides.length > 1 && i === nextIndex;
-      slide.classList.toggle('is-prev', isPrevious);
-      slide.classList.toggle('is-next', isNext);
-      slide.classList.toggle('is-prev2', false);
-      slide.classList.toggle('is-next2', false);
-      slide.classList.toggle('is-prev3', false);
-      slide.classList.toggle('is-next3', false);
-      slide.setAttribute('aria-hidden', String(i !== index && !isPrevious && !isNext));
+    const total = activeSlides.length;
+    if (!total) return;
+    index = (index + total) % total;
+    slides.forEach(slide => {
+      slide.classList.add('is-filtered-out');
+      slide.classList.remove('is-active','is-prev','is-next','is-prev2','is-next2','is-prev3','is-next3');
+      slide.setAttribute('aria-hidden','true');
     });
-    previous.disabled = false;
-    next.disabled = false;
-    count.textContent = `${String(index + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
+    activeSlides.forEach((slide,i) => {
+      const prev = total > 1 && i === (index - 1 + total) % total;
+      const following = total > 1 && i === (index + 1) % total;
+      slide.classList.remove('is-filtered-out');
+      slide.classList.toggle('is-active',i===index);
+      slide.classList.toggle('is-prev',prev);
+      slide.classList.toggle('is-next',following);
+      slide.setAttribute('aria-hidden',String(i!==index && !prev && !following));
+    });
+    previous.disabled = total < 2;
+    next.disabled = total < 2;
+    count.textContent = `${String(index + 1).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
   };
-  previous.addEventListener('click', () => { index = (index - 1 + slides.length) % slides.length; update(); });
-  next.addEventListener('click', () => { index = (index + 1) % slides.length; update(); });
+  filters.forEach(button => button.addEventListener('click', () => {
+    const category = button.dataset.filter;
+    activeSlides = category === 'all' ? slides.slice() : slides.filter(slide => slide.dataset.category === category);
+    index = 0;
+    filters.forEach(item => item.classList.toggle('is-selected',item===button));
+    update();
+  }));
+  previous.addEventListener('click', () => { index = (index - 1 + activeSlides.length) % activeSlides.length; update(); });
+  next.addEventListener('click', () => { index = (index + 1) % activeSlides.length; update(); });
   let touchStart = 0;
   carousel.addEventListener('touchstart', e => { touchStart = e.changedTouches[0].clientX; }, {passive:true});
   carousel.addEventListener('touchend', e => {
     const delta = e.changedTouches[0].clientX - touchStart;
-    if(Math.abs(delta) > 45){
-      if(delta < 0) index = (index + 1) % slides.length;
-      if(delta > 0) index = (index - 1 + slides.length) % slides.length;
+    if(activeSlides.length>1 && Math.abs(delta)>45){
+      if(delta<0) index=(index+1)%activeSlides.length;
+      if(delta>0) index=(index-1+activeSlides.length)%activeSlides.length;
       update();
     }
   }, {passive:true});
