@@ -1,0 +1,66 @@
+name: Generate portfolio video posters
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '*.mp4'
+      - 'index.html'
+      - '.github/workflows/generate-video-posters.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  posters:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Generate thumbnails from 3 seconds into each video
+        run: |
+          set -e
+          for video in *.mp4; do
+            [ -f "$video" ] || continue
+            poster="${video%.mp4}.jpg"
+            ffmpeg -y -ss 3 -i "$video" -frames:v 1 -vf "scale=720:-2" -q:v 3 "$poster"
+          done
+
+      - name: Add poster attributes to portfolio videos
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path('index.html')
+          html = path.read_text(encoding='utf-8')
+
+          def replace(match):
+              tag = match.group(0)
+              src_match = re.search(r'src="([^"]+\.mp4)"', tag)
+              if not src_match:
+                  return tag
+              src = src_match.group(1)
+              poster = src.rsplit('.', 1)[0] + '.jpg'
+              tag = re.sub(r'\sposter="[^"]*"', '', tag)
+              return tag.replace('<video ', f'<video poster="{poster}" ', 1)
+
+          updated = re.sub(r'<video\b[^>]*>', replace, html)
+          path.write_text(updated, encoding='utf-8')
+          PY
+
+      - name: Commit posters and HTML
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add '*.jpg' index.html
+          if git diff --cached --quiet; then
+            echo 'No poster changes to commit.'
+          else
+            git commit -m 'Add custom poster frames to portfolio videos'
+            git push
+          fi
