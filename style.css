@@ -17,7 +17,7 @@
 .carousel-controls button:not(:disabled):hover{background:var(--text);color:var(--bg)}
 .carousel-controls button:disabled{opacity:.25;cursor:default}
 .carousel-count{font:10px var(--mono);color:#aaa;min-width:48px;text-align:center}
-.carousel-viewport{overflow:visible;position:relative;padding:4px 0 24px}
+.carousel-viewport{overflow:hidden;position:relative;padding:4px 0 24px}
 .carousel-track{display:grid;position:relative;transition:height .35s ease}
 .carousel-slide{grid-area:1/1;position:relative;width:min(100%,820px);justify-self:center;min-width:0;opacity:0;pointer-events:none;transform:translateX(-28px) scale(.88);transition:transform .45s cubic-bezier(.2,.7,.2,1),opacity .35s ease;transform-origin:top left;display:flex;flex-direction:column;align-items:center}
 .carousel-slide.is-active,.carousel-slide.is-next,.carousel-slide.is-third{opacity:1}
