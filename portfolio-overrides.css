@@ -13,52 +13,151 @@
   grid-column: 2;
 }
 
-/* Retours clients : premières captures de Homy */
-.testimonials .testimonial-empty {
-  display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
-  gap: 20px;
-  min-height: 0;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  overflow: visible;
-}
-
-.testimonials .testimonial-empty::before,
-.testimonials .testimonial-empty::after {
-  content: "";
-  display: block;
-  width: 100%;
-  border: 1px solid #343432;
-  border-radius: 14px;
-  background-color: #1b1b1f;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  box-shadow: 0 18px 45px rgba(0,0,0,.18);
-}
-
-.testimonials .testimonial-empty::before {
-  aspect-ratio: 900 / 250;
-  background-image: url("assets/homy-01.svg");
-}
-
-.testimonials .testimonial-empty::after {
-  aspect-ratio: 900 / 170;
-  background-image: url("assets/homy-02.svg");
-}
-
-.testimonials .testimonial-empty > * {
-  display: none;
-}
-
 @media (max-width: 800px) {
   .portfolio-formats .format-group:nth-child(2) {
     grid-column: auto;
   }
+}
 
-  .testimonials .testimonial-empty {
-    grid-template-columns: 1fr;
-  }
+/* Retours clients : emplacement d'images personnel */
+.testimonial-uploader {
+  border: 1px solid #343432;
+  background: linear-gradient(110deg,#1b1b1a,#141414);
+  padding: 28px;
+}
+
+.testimonial-uploader-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.testimonial-uploader-head > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.testimonial-uploader .testimonial-mark {
+  font: 72px/0.8 Georgia,serif;
+  color: #777;
+  opacity: .65;
+}
+
+.testimonial-uploader h3 {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0 0 7px;
+}
+
+.testimonial-uploader p {
+  max-width: 600px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.testimonial-uploader .testimonial-tag {
+  margin: 0;
+}
+
+.testimonial-slots {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 16px;
+}
+
+.testimonial-slot {
+  position: relative;
+  min-height: 190px;
+  border: 1px dashed #555;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color .2s,background .2s;
+}
+
+.testimonial-slot:not(.has-image):hover {
+  border-color: #aaa;
+  background: #181818;
+}
+
+.testimonial-slot input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.testimonial-slot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+}
+
+.testimonial-plus {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #666;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.testimonial-add-label {
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font: 9px var(--mono);
+  letter-spacing: 1px;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.testimonial-remove {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #666;
+  border-radius: 50%;
+  background: #111d;
+  color: #eee;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .2s,background .2s;
+}
+
+.testimonial-slot:hover .testimonial-remove,
+.testimonial-remove:focus-visible {
+  opacity: 1;
+}
+
+.testimonial-remove:hover {
+  background: #333;
+}
+
+@media (max-width: 700px) {
+  .testimonial-uploader { padding: 20px; }
+  .testimonial-uploader-head { align-items: flex-start; flex-direction: column; }
+  .testimonial-slots { grid-template-columns: 1fr; }
 }
