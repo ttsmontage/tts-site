@@ -19,7 +19,12 @@ document.querySelectorAll('[data-carousel]').forEach(carousel => {
   const count = group.querySelector('.carousel-count');
   let index = 0;
   const update = () => {
-    track.style.transform = `translateX(-${index * 100}%)`;
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('is-active', i === index);
+      slide.classList.toggle('is-next', i === index + 1);
+      slide.classList.toggle('is-third', i === index + 2);
+      slide.setAttribute('aria-hidden', String(i < index || i > index + 2));
+    });
     previous.disabled = index === 0;
     next.disabled = index === slides.length - 1;
     count.textContent = `${String(index + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
