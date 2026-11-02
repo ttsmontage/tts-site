@@ -21,13 +21,20 @@ document.querySelectorAll('[data-carousel]').forEach(carousel => {
   const update = () => {
     slides.forEach((slide, i) => {
       slide.classList.toggle('is-active', i === index);
-      slide.classList.toggle('is-prev', i === (index - 1 + slides.length) % slides.length);
-      slide.classList.toggle('is-next', i === (index + 1) % slides.length);
+      const distance = Math.abs(i - index);
+      const isWrappedNeighbor = slides.length === 4 && (
+        (index === 1 && i === 3) ||
+        (index === 2 && i === 3)
+      );
+      const isWrappedLeftNeighbor = slides.length === 4 && index === 1 && i === 3;
+      const isWrappedRightNeighbor = slides.length === 4 && index === 2 && i === 3;
+      slide.classList.toggle('is-prev', i === index - 1 || isWrappedLeftNeighbor);
+      slide.classList.toggle('is-next', i === index + 1 || isWrappedRightNeighbor);
       slide.classList.toggle('is-prev2', i === index - 2);
       slide.classList.toggle('is-next2', i === index + 2);
       slide.classList.toggle('is-prev3', false);
       slide.classList.toggle('is-next3', false);
-      slide.setAttribute('aria-hidden', String(Math.abs(i - index) > 2));
+      slide.setAttribute('aria-hidden', String(distance > 2 && !isWrappedNeighbor));
     });
     previous.disabled = false;
     next.disabled = false;
