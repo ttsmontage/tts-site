@@ -1,0 +1,20 @@
+/* Portfolio refinements */
+.carousel-slide .video-frame,
+.carousel-slide .video-placeholder {
+  border-radius: 14px;
+}
+
+.carousel-slide .video-frame iframe {
+  border-radius: 14px;
+}
+
+/* Two portfolio formats: short and long */
+.portfolio-formats .format-group:nth-child(2) {
+  grid-column: 2;
+}
+
+@media (max-width: 800px) {
+  .portfolio-formats .format-group:nth-child(2) {
+    grid-column: auto;
+  }
+}
