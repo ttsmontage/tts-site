@@ -25,7 +25,9 @@ document.querySelectorAll('[data-carousel]').forEach(carousel => {
       slide.classList.toggle('is-next', i === index + 1);
       slide.classList.toggle('is-prev2', i === index - 2);
       slide.classList.toggle('is-next2', i === index + 2);
-      slide.setAttribute('aria-hidden', String(Math.abs(i - index) > 2));
+      slide.classList.toggle('is-prev3', i === index - 3);
+      slide.classList.toggle('is-next3', i === index + 3);
+      slide.setAttribute('aria-hidden', String(Math.abs(i - index) > 3));
     });
     previous.disabled = index === 0;
     next.disabled = index === slides.length - 1;
