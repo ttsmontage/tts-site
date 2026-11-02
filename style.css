@@ -63,3 +63,10 @@
 /* One Story reprend le format vertical 9:16 */
 .video-frame.vertical{width:min(100%,330px);aspect-ratio:9/16}
 @media(max-width:800px){.video-frame.vertical{width:min(100%,300px)}}
+
+.format-filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+.format-filter{border:1px solid #454543;background:transparent;color:#aaa;padding:9px 13px;font:10px var(--mono);letter-spacing:.2px;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.format-filter:hover{border-color:#aaa;color:var(--text)}
+.format-filter.is-selected{background:#efeee9;color:#111;border-color:#efeee9}
+.carousel-slide.is-filtered-out{display:none}
+@media(max-width:430px){.format-filters{gap:6px}.format-filter{padding:8px 10px;font-size:9px}}
