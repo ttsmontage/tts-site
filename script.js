@@ -21,27 +21,27 @@ document.querySelectorAll('[data-carousel]').forEach(carousel => {
   const update = () => {
     slides.forEach((slide, i) => {
       slide.classList.toggle('is-active', i === index);
-      slide.classList.toggle('is-prev', i === index - 1);
-      slide.classList.toggle('is-next', i === index + 1);
+      slide.classList.toggle('is-prev', i === (index - 1 + slides.length) % slides.length);
+      slide.classList.toggle('is-next', i === (index + 1) % slides.length);
       slide.classList.toggle('is-prev2', i === index - 2);
       slide.classList.toggle('is-next2', i === index + 2);
       slide.classList.toggle('is-prev3', false);
       slide.classList.toggle('is-next3', false);
       slide.setAttribute('aria-hidden', String(Math.abs(i - index) > 2));
     });
-    previous.disabled = index === 0;
-    next.disabled = index === slides.length - 1;
+    previous.disabled = false;
+    next.disabled = false;
     count.textContent = `${String(index + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
   };
-  previous.addEventListener('click', () => { if(index > 0){ index--; update(); }});
-  next.addEventListener('click', () => { if(index < slides.length - 1){ index++; update(); }});
+  previous.addEventListener('click', () => { index = (index - 1 + slides.length) % slides.length; update(); });
+  next.addEventListener('click', () => { index = (index + 1) % slides.length; update(); });
   let touchStart = 0;
   carousel.addEventListener('touchstart', e => { touchStart = e.changedTouches[0].clientX; }, {passive:true});
   carousel.addEventListener('touchend', e => {
     const delta = e.changedTouches[0].clientX - touchStart;
     if(Math.abs(delta) > 45){
-      if(delta < 0 && index < slides.length - 1) index++;
-      if(delta > 0 && index > 0) index--;
+      if(delta < 0) index = (index + 1) % slides.length;
+      if(delta > 0) index = (index - 1 + slides.length) % slides.length;
       update();
     }
   }, {passive:true});
