@@ -168,7 +168,8 @@ if (contactForm) {
     const frame = slide.querySelector('.video-frame');
     if (!frame) return;
     const old = frame.querySelector('video');
-    if (old) URL.revokeObjectURL(old.src);
+    if (old && old.src.startsWith('blob:')) URL.revokeObjectURL(old.src);
+    if (old) old.remove();
     const iframe = frame.querySelector('iframe');
     if (iframe) iframe.remove();
     let video = frame.querySelector('video');
@@ -227,9 +228,10 @@ if (contactForm) {
       try {
         await withStore('readwrite', store => store.delete('slide-' + i));
         const video = frame.querySelector('video');
-        if (video) { URL.revokeObjectURL(video.src); video.remove(); }
+        if (video) { if (video.src.startsWith('blob:')) URL.revokeObjectURL(video.src); video.remove(); }
         frame.classList.remove('has-local-video');
         const original = slide.dataset.originalSrc;
+        const originalVideo = slide.dataset.originalVideoSrc;
         if (original && !frame.querySelector('iframe')) {
           const iframe = document.createElement('iframe');
           iframe.src = original;
@@ -238,6 +240,13 @@ if (contactForm) {
           iframe.allowFullscreen = true;
           iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
           frame.appendChild(iframe);
+        } else if (originalVideo && !frame.querySelector('video')) {
+          const restored = document.createElement('video');
+          restored.src = originalVideo;
+          restored.controls = true;
+          restored.playsInline = true;
+          restored.preload = 'metadata';
+          frame.appendChild(restored);
         }
       } catch (error) { console.error(error); }
     });
@@ -245,6 +254,10 @@ if (contactForm) {
     if (iframe) {
       slide.dataset.originalSrc = iframe.src;
       slide.dataset.originalTitle = iframe.title;
+    }
+    const originalVideo = frame.querySelector('video');
+    if (originalVideo) {
+      slide.dataset.originalVideoSrc = originalVideo.getAttribute('src') || originalVideo.currentSrc || '';
     }
   });
   restore();
