@@ -366,3 +366,14 @@ body:before{
 .carousel-count {
   color: #fff;
 }
+
+
+/* Accès direct aux prestations : afficher les offres dès l'arrivée */
+#services {
+  scroll-margin-top: 0;
+  padding-top: 32px;
+}
+
+#services .section-heading {
+  margin-bottom: 28px;
+}
