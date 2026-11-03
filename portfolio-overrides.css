@@ -347,3 +347,16 @@ body:before{
   .nav{background:#111622;border-bottom-color:#3a435a}
   .hero:before{width:100%;right:0;top:15%;height:55%}
 }
+
+
+/* Sélecteurs de catégories des formats : style blanc */
+.format-filter,
+.format-filter:hover,
+.format-filter.is-selected {
+  color: #fff;
+  border-color: #fff;
+}
+.format-filter.is-selected {
+  background: #fff;
+  color: #090b11;
+}
