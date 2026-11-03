@@ -360,3 +360,9 @@ body:before{
   background: #fff;
   color: #090b11;
 }
+
+
+/* Compteurs de navigation du portfolio en blanc */
+.carousel-count {
+  color: #fff;
+}
