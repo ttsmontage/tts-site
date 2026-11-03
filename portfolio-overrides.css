@@ -180,7 +180,7 @@
 }
 
 
-/* TTS — background atmosphérique et duo bleu / orange plus assumé */
+/* TTS — background atmosphérique et bleu plus assumé */
 :root{
   --bg:#090b11;
   --panel:#121722;
@@ -189,14 +189,14 @@
   --muted:#a5aaba;
   --line:#2c3445;
   --accent:#8295ff;
-  --accent-warm:#f0a06c;
+  --accent-warm:#8295ff;
 }
 
 html{background:#090b11}
 body{
   background:
     radial-gradient(ellipse 62% 42% at 8% 4%,#8295ff22 0%,transparent 72%),
-    radial-gradient(ellipse 48% 42% at 96% 34%,#f0a06c16 0%,transparent 74%),
+    radial-gradient(ellipse 48% 42% at 96% 34%,#8295ff16 0%,transparent 74%),
     radial-gradient(ellipse 60% 44% at 44% 92%,#8295ff12 0%,transparent 76%),
     linear-gradient(145deg,#0b0e16 0%,#090b11 48%,#0d0d13 100%);
   background-attachment:fixed;
@@ -227,13 +227,13 @@ body:before{
   height:90%;
   right:-8%;
   top:2%;
-  background:radial-gradient(ellipse,#8295ff16 0%,#f0a06c0b 42%,transparent 72%);
+  background:radial-gradient(ellipse,#8295ff16 0%,#8295ff0b 42%,transparent 72%);
   filter:blur(18px);
   pointer-events:none;
 }
 .hero-art{
   background:
-    radial-gradient(ellipse at 72% 25%,#f0a06c25 0%,transparent 38%),
+    radial-gradient(ellipse at 72% 25%,#8295ff25 0%,transparent 38%),
     radial-gradient(ellipse at 30% 72%,#8295ff30 0%,transparent 55%),
     linear-gradient(135deg,#1b2233,#10141e 65%,#15131a);
   border-color:#48516d;
@@ -242,17 +242,17 @@ body:before{
 .art-grid{background-image:linear-gradient(#8295ff25 1px,transparent 1px),linear-gradient(90deg,#8295ff25 1px,transparent 1px)}
 .art-line{background:linear-gradient(90deg,transparent,var(--accent),var(--accent-warm),transparent);height:2px;opacity:.75}
 .line-two{opacity:.55}
-.frame-back{border-color:#f0a06c;background:#f0a06c08}
+.frame-back{border-color:#8295ff;background:#8295ff08}
 .frame-front{border-color:#8295ff;background:linear-gradient(145deg,#242d45,#121722)}
 .art-cross{color:var(--accent-warm);font-size:24px}
 .art-index{color:var(--accent-warm)}
 
-/* Orange plus visible dans les repères éditoriaux */
-.eyebrow{color:#f0a06c}
-.section-heading .eyebrow,.intro>.eyebrow,.process>.eyebrow,.contact-intro>.eyebrow{color:#f0a06c}
+/* Bleu plus visible dans les repères éditoriaux */
+.eyebrow{color:#8295ff}
+.section-heading .eyebrow,.intro>.eyebrow,.process>.eyebrow,.contact-intro>.eyebrow{color:#8295ff}
 .intro h2 em,.section-heading h2 em{color:var(--accent)}
 .intro,.services,.portfolio,.process,.testimonials,.contact{border-top-color:#30384a}
-.hero-bottom span:first-child{color:#f0a06c}
+.hero-bottom span:first-child{color:#8295ff}
 
 /* Cartes : fonds nuancés, liserés et détails alternés */
 .service-card{
@@ -283,7 +283,7 @@ body:before{
 .service-featured .card-foot strong{color:#c5ceff}
 
 /* Portfolio : cadre et commandes plus identifiables */
-.format-group{border-top-color:#e9a06f88}
+.format-group{border-top-color:#8295ff88}
 .format-group:nth-child(2){border-top-color:#8295ff99}
 .format-heading .eyebrow{color:var(--accent-warm)}
 .format-group:nth-child(2) .format-heading .eyebrow{color:var(--accent)}
@@ -295,7 +295,7 @@ body:before{
 .format-filter.is-selected{background:var(--accent);border-color:var(--accent);color:#090b11}
 .video-placeholder,.video-frame{
   background:
-    radial-gradient(ellipse at 78% 18%,#f0a06c20,transparent 42%),
+    radial-gradient(ellipse at 78% 18%,#8295ff20,transparent 42%),
     radial-gradient(ellipse at 18% 82%,#8295ff28,transparent 55%),
     linear-gradient(145deg,#1a2030,#0e1119 70%);
   border-color:#46516d;
@@ -317,7 +317,7 @@ body:before{
 /* Témoignages et contact */
 .testimonial-empty,.testimonial-uploader{
   background:
-    radial-gradient(ellipse at 92% 8%,#f0a06c19,transparent 42%),
+    radial-gradient(ellipse at 92% 8%,#8295ff19,transparent 42%),
     linear-gradient(110deg,#1a2030,#11151e);
   border-color:#46516d;
 }
@@ -325,7 +325,7 @@ body:before{
 .testimonial-tag{color:var(--accent)}
 .contact-panel{
   background:
-    radial-gradient(ellipse at 100% 0%,#f0a06c16,transparent 45%),
+    radial-gradient(ellipse at 100% 0%,#8295ff16,transparent 45%),
     linear-gradient(145deg,#1a2030,#10141d);
   border-color:#46516d;
   box-shadow:0 20px 60px #0004;
@@ -333,9 +333,9 @@ body:before{
 .contact-direct>a{background:linear-gradient(110deg,#171e2c,#11151d);border-color:#3b465f}
 .contact-direct>a:hover{border-color:var(--accent-warm);background:#202333}
 .contact-direct-icon{border-color:#8295ff;color:var(--accent)}
-.contact-direct>a:nth-child(even) .contact-direct-icon{color:var(--accent-warm);border-color:#a66e4f}
+.contact-direct>a:nth-child(even) .contact-direct-icon{color:var(--accent-warm);border-color:#6575b4}
 .contact-form input,.contact-form textarea{background:#0b0e15;border-color:#414b63}
-.contact-form input:focus,.contact-form textarea:focus{border-color:var(--accent-warm);box-shadow:0 0 0 2px #f0a06c20}
+.contact-form input:focus,.contact-form textarea:focus{border-color:var(--accent-warm);box-shadow:0 0 0 2px #8295ff20}
 .contact-submit{background:var(--accent);color:#090b11}
 .contact-submit:hover{background:#a3b0ff}
 .site-footer{border-top-color:#34394b}
