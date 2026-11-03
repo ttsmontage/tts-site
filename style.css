@@ -127,3 +127,96 @@
 .portfolio-upload-label input{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
 .portfolio-reset-video{background:transparent;color:#888}
 .video-frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#080808}
+
+
+/* TTS visual refresh — noir, bleu électrique et orange chaud */
+:root{
+  --bg:#0b0c0f;
+  --panel:#13151a;
+  --panel2:#191c23;
+  --text:#f1f2f5;
+  --muted:#a2a6b0;
+  --line:#2b2f38;
+  --accent:#8295ff;
+  --accent-warm:#e9a06f;
+}
+
+/* Navigation et liens */
+.nav a:hover,.text-link:hover{color:var(--accent)}
+.nav .nav-contact{border-color:#5665a8}
+.nav .nav-contact:hover{background:var(--accent);border-color:var(--accent);color:#0b0c0f}
+.brand-mark{color:var(--text)}
+.brand:hover .brand-mark{color:var(--accent);transition:color .2s}
+
+/* Hero : une couleur principale, une touche chaude */
+.status-dot{background:var(--accent);box-shadow:0 0 12px #8295ff66}
+.hero h1 span{color:var(--accent)}
+.hero-text{color:#b1b4bd}
+.button-light{background:var(--accent);color:#0b0c0f;transition:background .2s,transform .2s}
+.button-light:hover{background:#a0adff;transform:translateY(-2px)}
+.hero-art{background:radial-gradient(ellipse at 55% 50%,#20263b 0,#151820 54%,#0b0c0f 100%);border-color:#30364a}
+.art-grid{background-image:linear-gradient(#8295ff20 1px,transparent 1px),linear-gradient(90deg,#8295ff20 1px,transparent 1px)}
+.art-line{background:var(--accent);opacity:.38}
+.line-two{background:var(--accent-warm);opacity:.28}
+.frame-front{border-color:#8295ff88;background:linear-gradient(145deg,#242a3b,#111319)}
+.frame-back{border-color:#e9a06f88}
+.art-cross{color:var(--accent-warm)}
+.art-index{color:var(--accent)}
+
+/* Titres et séparateurs */
+.intro h2 em{color:var(--accent)}
+.section-heading h2 em{color:var(--accent)}
+.eyebrow{color:#a8adbb}
+.intro,.services,.portfolio,.process,.testimonials,.contact{border-color:var(--line)}
+
+/* Portfolio */
+.format-group{border-color:#34394a}
+.carousel-controls button{border-color:#4a5062}
+.carousel-controls button:not(:disabled):hover{background:var(--accent);border-color:var(--accent);color:#0b0c0f}
+.carousel-count{color:var(--accent)}
+.format-filter{border-color:#414758;color:#b3b7c2}
+.format-filter:hover{border-color:var(--accent);color:var(--text)}
+.format-filter.is-selected{background:var(--accent);color:#0b0c0f;border-color:var(--accent)}
+.video-placeholder,.video-frame{border-color:#353b4c}
+.slide-caption b{color:var(--text)}
+.portfolio-note>span{color:var(--accent-warm);font:10px var(--mono);letter-spacing:1.2px}
+
+/* Prestations : mise en avant discrète de la carte centrale */
+.service-card{background:linear-gradient(145deg,#16181e,#111318);border-color:#2e333e}
+.service-featured{background:linear-gradient(145deg,#1b2030,#13161d);border-color:#6574b5;box-shadow:inset 0 2px 0 var(--accent)}
+.card-top{color:#b2b7c5}
+.card-arrow{color:var(--accent)}
+.service-card li:before{color:var(--accent)}
+.service-card li{border-color:#303540}
+.service-featured .card-foot{border-color:#414967}
+.service-featured .card-foot strong{color:#c4ccff}
+.service-footnote{color:#999eaa}
+.services-cta .text-link{color:var(--accent)}
+.services-cta .text-link:hover{color:var(--accent-warm)}
+
+/* Déroulement et retours */
+.steps article{border-color:#59658f}
+.step-icon svg{stroke:var(--accent);opacity:1}
+.steps article:nth-child(even) .step-icon svg{stroke:var(--accent-warm)}
+.steps article>span{color:var(--accent)}
+.testimonial-empty{border-color:#363b49;background:linear-gradient(110deg,#1b1e27,#121419)}
+.testimonial-mark{color:var(--accent-warm)}
+.testimonial-tag{color:var(--accent)}
+
+/* Contact */
+.contact-panel{border-color:#3d4354;background:linear-gradient(145deg,#171a22,#101217)}
+.contact-direct>a{border-color:#343a49;background:#12151b}
+.contact-direct>a:hover{border-color:var(--accent);background:#191e2b}
+.contact-direct-icon{border-color:#59658f;color:var(--accent)}
+.contact-direct>a:nth-child(even) .contact-direct-icon{color:var(--accent-warm);border-color:#75543f}
+.contact-direct small{color:#9ca3b6}
+.contact-form label{color:#b7bdcc}
+.contact-form input,.contact-form textarea{border-color:#3a4050;background:#0d0f14}
+.contact-form input:focus,.contact-form textarea:focus{border-color:var(--accent);box-shadow:0 0 0 2px #8295ff1c}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#777e8e}
+.contact-form-note{color:#8e94a3!important}
+
+/* Détails de survol */
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.site-footer{border-color:var(--line)}
+.site-footer>a:last-child:hover{color:var(--accent)}
