@@ -415,3 +415,33 @@ body:before{
     aspect-ratio: 4 / 3;
   }
 }
+
+
+/* Visuel principal de l'en-tête : clap de cinéma TTS */
+.hero-art {
+  background: #080d18;
+  border-color: #303b55;
+}
+.hero-image {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.hero-image-shade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(0deg, #05091455 0%, transparent 35%, #05091412 100%);
+}
+.hero-art .art-index {
+  z-index: 1;
+  color: #d7e0ff;
+  text-shadow: 0 1px 8px #000;
+}
+@media (max-width: 800px) {
+  .hero-art { height: 340px; }
+}
