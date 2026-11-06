@@ -245,3 +245,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
     padding: 12px 16px;
   }
 }
+
+
+/* Galerie des retours clients */
+.testimonial-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:start}
+.testimonial-image{margin:0;min-width:0;padding:12px;background:linear-gradient(145deg,#171b27,#101319);border:1px solid #343b4d;overflow:hidden}
+.testimonial-image img{display:block;width:100%;height:auto;max-height:620px;object-fit:contain;object-position:top center}
+@media(max-width:800px){.testimonial-gallery{grid-template-columns:1fr;gap:18px}.testimonial-image{padding:9px}.testimonial-image img{max-height:none}}
