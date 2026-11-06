@@ -220,3 +220,28 @@
 a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .site-footer{border-color:var(--line)}
 .site-footer>a:last-child:hover{color:var(--accent)}
+
+
+/* CTA principal de navigation : contact */
+.nav .nav-contact {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #090b11;
+  font-weight: 800;
+  box-shadow: 0 0 22px #8295ff35;
+}
+.nav .nav-contact span {
+  color: #090b11;
+}
+.nav .nav-contact:hover {
+  background: #a3b0ff;
+  border-color: #a3b0ff;
+  color: #090b11;
+  transform: translateY(-1px);
+}
+@media (max-width: 800px) {
+  .nav .nav-contact {
+    align-self: flex-start;
+    padding: 12px 16px;
+  }
+}
