@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tableau de suivi de la prospection TTS Montage.">
+<meta name="theme-color" content="#101010">
+<title>Prospection — TTS Montage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#101010;--panel:#171717;--panel2:#1d1d1d;--line:#303030;--text:#f2f0eb;--muted:#a09d96;--accent:#d9ff66;--green:#a8e6a1;--amber:#f2c879}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% 0%,#24291a 0,transparent 35%),var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;min-height:100vh}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.top{padding:30px 0 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-weight:800;letter-spacing:.16em;font-size:18px}.brand span{color:var(--accent)}.back{color:var(--muted);text-decoration:none;font-size:13px}.back:hover{color:var(--accent)}main{padding:58px 0 80px}.eyebrow,.mono{font-family:"DM Mono",monospace;text-transform:uppercase;letter-spacing:.12em;font-size:11px;color:var(--accent)}h1{font-size:clamp(36px,7vw,64px);line-height:1.02;letter-spacing:-.055em;margin:13px 0 14px}.intro{max-width:660px;color:var(--muted);line-height:1.7;margin:0 0 34px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:30px 0}.stat{background:var(--panel);border:1px solid var(--line);padding:19px 20px;border-radius:14px}.stat strong{display:block;font-size:30px;letter-spacing:-.04em}.stat span{font-size:12px;color:var(--muted)}.toolbar{display:flex;gap:12px;align-items:center;justify-content:space-between;margin:28px 0 18px;flex-wrap:wrap}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:9px 13px;font:600 12px Manrope;cursor:pointer}.filter.active,.filter:hover{color:var(--bg);background:var(--accent);border-color:var(--accent)}input{background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:999px;padding:11px 15px;font:13px Manrope;min-width:min(260px,100%);outline:none}input:focus{border-color:var(--accent)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{background:linear-gradient(145deg,#1b1b1b,#151515);border:1px solid var(--line);border-radius:16px;padding:20px;min-width:0}.card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.card h2{font-size:20px;margin:0 0 7px;letter-spacing:-.03em}.platforms{font-size:12px;color:var(--muted)}.pill{font:11px "DM Mono",monospace;border:1px solid var(--line);padding:7px 9px;border-radius:999px;white-space:nowrap;color:var(--amber)}.pill.active{color:var(--green);border-color:#40533d}.pill.waiting{color:var(--amber)}.meta{display:flex;gap:8px;flex-wrap:wrap;margin:17px 0}.tag{background:#242424;color:#c7c4bd;border-radius:6px;padding:6px 8px;font-size:11px}.field{margin-top:13px}.field b{display:block;font:10px "DM Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}.field p{margin:0;color:#e2dfd8;font-size:13px;line-height:1.6}.details{border-top:1px solid var(--line);margin-top:17px;padding-top:13px}.details summary{font-size:12px;color:var(--accent);cursor:pointer;list-style:none}.details summary::-webkit-details-marker{display:none}.details summary:after{content:"＋";float:right}.details[open] summary:after{content:"−"}.details .field{margin-top:12px}.empty{display:none;color:var(--muted);padding:30px;text-align:center;border:1px dashed var(--line);border-radius:14px}.foot{border-top:1px solid var(--line);padding:20px 0 35px;color:var(--muted);font-size:11px;line-height:1.6}.foot strong{color:var(--text)}@media(max-width:700px){.wrap{width:min(100% - 28px,600px)}main{padding-top:40px}.stats{gap:8px}.stat{padding:14px}.stat strong{font-size:24px}.stat span{font-size:10px}.grid{grid-template-columns:1fr}.toolbar{align-items:stretch}.filters{width:100%}input{width:100%}.card-head{flex-direction:column}.pill{white-space:normal}}
+</style>
+</head>
+<body>
+<header class="top wrap"><a class="brand" href="../index.html" style="color:inherit;text-decoration:none">TTS<span>.</span> MONTAGE</a><a class="back" href="../index.html">← Retour au site</a></header>
+<main class="wrap">
+<p class="eyebrow">OUTIL INTERNE · TTS MONTAGE</p>
+<h1>Suivi de<br><span style="color:var(--accent)">prospection.</span></h1>
+<p class="intro">Toutes les pistes, prises de contact et prochaines étapes au même endroit. Le tableau est actualisé au fil des échanges.</p>
+<div class="stats" aria-live="polite">
+<div class="stat"><strong id="total">—</strong><span>Prospects suivis</span></div>
+<div class="stat"><strong id="waiting">—</strong><span>En attente de réponse</span></div>
+<div class="stat"><strong id="active">—</strong><span>Échanges engagés</span></div>
+</div>
+<div class="toolbar"><div class="filters" role="group" aria-label="Filtrer les prospects">
+<button class="filter active" data-filter="all">Tous</button><button class="filter" data-filter="waiting">En attente</button><button class="filter" data-filter="active">Échanges engagés</button>
+</div><input id="search" type="search" placeholder="Rechercher un créateur…" aria-label="Rechercher un créateur"></div>
+<section class="grid" id="grid" aria-live="polite"></section><div class="empty" id="empty">Aucun prospect ne correspond à cette recherche.</div>
+</main>
+<footer class="foot"><div class="wrap"><strong>TTS Montage · Prospection</strong><br>Dernière actualisation des données : <span id="updated">—</span>.<br>Cette page est hébergée sur un dépôt GitHub public : ne pas y ajouter d'adresses e-mail privées, de numéros ou d'informations confidentielles.</div></footer>
+<script>
+const grid=document.getElementById('grid'),search=document.getElementById('search');let records=[],filter='all';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function field(label,value){return value?'<div class="field"><b>'+esc(label)+'</b><p>'+esc(value)+'</p></div>':''}
+function render(){const q=search.value.trim().toLowerCase();const shown=records.filter(p=>(filter==='all'||p.status_type===filter)&&[p.name,p.status,p.opportunity,p.contact_channel,...(p.platforms||[])].join(' ').toLowerCase().includes(q));grid.innerHTML=shown.map(p=>'<article class="card"><div class="card-head"><div><h2>'+esc(p.name)+'</h2><div class="platforms">'+esc((p.platforms||[]).join(' · '))+'</div></div><span class="pill '+esc(p.status_type)+'">'+esc(p.status)+'</span></div><div class="meta"><span class="tag">Contact : '+esc(p.contact_channel)+'</span></div>'+field('Opportunité',p.opportunity)+field('Prochaine étape',p.next_step)+'<details class="details"><summary>Voir le suivi détaillé</summary>'+field('Réponse',p.response)+field('Notes',p.notes)+field('Date de contact',p.contact_date||'Non renseignée')+'</details></article>').join('');document.getElementById('empty').style.display=shown.length?'none':'block';}
+document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;render()}));search.addEventListener('input',render);
+fetch('./prospects.json').then(r=>{if(!r.ok)throw Error('Chargement impossible');return r.json()}).then(d=>{records=d.prospects||[];document.getElementById('total').textContent=records.length;document.getElementById('waiting').textContent=records.filter(x=>x.status_type==='waiting').length;document.getElementById('active').textContent=records.filter(x=>x.status_type==='active').length;document.getElementById('updated').textContent=d.updated_at||'—';render()}).catch(()=>{grid.innerHTML='<p style="color:#f2c879">Impossible de charger les données des prospects. Réessaie dans quelques instants.</p>'});
+</script>
+</body></html>
