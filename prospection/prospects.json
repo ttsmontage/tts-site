@@ -1,0 +1,102 @@
+{
+  "updated_at": "2026-11-09",
+  "description": "Suivi de la première vague de prospection TTS Montage.",
+  "prospects": [
+    {
+      "id": "ravswals",
+      "name": "RavsWals",
+      "platforms": [
+        "YouTube"
+      ],
+      "contact_channel": "YouTube",
+      "status": "Échange engagé",
+      "status_type": "active",
+      "response": "A répondu favorablement à l'idée d'échanger.",
+      "next_step": "Reprendre contact et poursuivre la discussion sur ses besoins.",
+      "opportunity": "Montage de contenus autour de Dofus Touch ; expérience Dofus pertinente.",
+      "contact_date": null,
+      "notes": "Un message de réponse a été envoyé avec l'adresse professionnelle de TTS Montage."
+    },
+    {
+      "id": "lightreaven",
+      "name": "LightReaven",
+      "platforms": [
+        "YouTube",
+        "TikTok",
+        "Instagram"
+      ],
+      "contact_channel": "E-mail",
+      "status": "Message envoyé",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre une réponse puis relancer si nécessaire.",
+      "opportunity": "Créer des formats courts à partir des vidéos YouTube pour attirer une nouvelle audience.",
+      "contact_date": null,
+      "notes": "Proposition axée sur YouTube Shorts, avec possibilité de décliner sur TikTok et Instagram Reels."
+    },
+    {
+      "id": "bonnetlesskrau",
+      "name": "BonnetLessKrau",
+      "platforms": [
+        "YouTube",
+        "Twitch",
+        "Discord"
+      ],
+      "contact_channel": "Discord — modérateur",
+      "status": "Prise de contact indirecte",
+      "status_type": "waiting",
+      "response": "En attente de retour du modérateur.",
+      "next_step": "Attendre de savoir si le modérateur peut transmettre le message ou indiquer un contact direct.",
+      "opportunity": "Échanger sur le montage de ses contenus YouTube et Twitch.",
+      "contact_date": null,
+      "notes": "Bonnet et LessKrau désignent le même créateur."
+    },
+    {
+      "id": "poney-club",
+      "name": "Poney Club",
+      "platforms": [
+        "Instagram",
+        "Twitch"
+      ],
+      "contact_channel": "E-mail",
+      "status": "Message envoyé",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre une réponse puis relancer si nécessaire.",
+      "opportunity": "Comprendre son organisation actuelle pour les extraits et formats courts autour du sport et du gaming.",
+      "contact_date": null,
+      "notes": "Le message demande notamment qui sélectionne et monte actuellement ses extraits."
+    },
+    {
+      "id": "djymtv",
+      "name": "DjymTV",
+      "platforms": [
+        "YouTube",
+        "Twitch"
+      ],
+      "contact_channel": "YouTube",
+      "status": "Commentaire de prise de contact",
+      "status_type": "waiting",
+      "response": "Pas encore de réponse confirmée dans le suivi.",
+      "next_step": "Vérifier si le commentaire a reçu une réponse et chercher un moyen de contact privé si nécessaire.",
+      "opportunity": "Évaluer si une aide au montage pourrait lui faire gagner du temps, sans bouleverser son format actuel.",
+      "contact_date": null,
+      "notes": "Ses formats courts semblent déjà avoir une identité éditoriale affirmée."
+    },
+    {
+      "id": "leonax",
+      "name": "Léonax",
+      "platforms": [
+        "YouTube"
+      ],
+      "contact_channel": "E-mail",
+      "status": "Message envoyé",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre une réponse puis relancer si nécessaire.",
+      "opportunity": "Créer des formats courts humoristiques à partir de ses vidéos : mèmes, références, SFX, sous-titres dynamiques et effets visuels, pour développer sa visibilité.",
+      "contact_date": null,
+      "notes": "La proposition met l'accent sur un style de montage fun et divertissant, au-delà du simple découpage d'extraits."
+    }
+  ]
+}
