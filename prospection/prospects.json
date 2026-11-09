@@ -9,8 +9,8 @@
         "YouTube"
       ],
       "contact_channel": "YouTube",
-      "status": "Échange engagé",
-      "status_type": "active",
+      "status": "En cours de validation",
+      "status_type": "validation",
       "response": "A répondu favorablement à l'idée d'échanger.",
       "next_step": "Reprendre contact et poursuivre la discussion sur ses besoins.",
       "opportunity": "Montage de contenus autour de Dofus Touch ; expérience Dofus pertinente.",
@@ -26,7 +26,7 @@
         "Instagram"
       ],
       "contact_channel": "E-mail",
-      "status": "Message envoyé",
+      "status": "En attente de réponse",
       "status_type": "waiting",
       "response": "En attente de réponse.",
       "next_step": "Attendre une réponse puis relancer si nécessaire.",
@@ -43,7 +43,7 @@
         "Discord"
       ],
       "contact_channel": "Discord — modérateur",
-      "status": "Prise de contact indirecte",
+      "status": "En attente de réponse",
       "status_type": "waiting",
       "response": "En attente de retour du modérateur.",
       "next_step": "Attendre de savoir si le modérateur peut transmettre le message ou indiquer un contact direct.",
@@ -59,7 +59,7 @@
         "Twitch"
       ],
       "contact_channel": "E-mail",
-      "status": "Message envoyé",
+      "status": "En attente de réponse",
       "status_type": "waiting",
       "response": "En attente de réponse.",
       "next_step": "Attendre une réponse puis relancer si nécessaire.",
@@ -75,13 +75,13 @@
         "Twitch"
       ],
       "contact_channel": "YouTube",
-      "status": "Réponse reçue — Pas de besoin actuellement",
-      "status_type": "waiting",
+      "status": "Refusé",
+      "status_type": "refused",
       "response": "A indiqué qu'il ne recherchait pas de monteur.",
       "next_step": "Aucune relance prévue pour le moment ; reprendre contact uniquement si sa situation évolue.",
-      "opportunity": "Évaluer si une aide au montage pourrait lui faire gagner du temps, sans bouleverser son format actuel.",
+      "opportunity": "Pas de besoin identifié actuellement.",
       "contact_date": null,
-      "notes": "Réponse reçue à la suite du commentaire YouTube. Le créateur ne recherche pas de monteur actuellement."
+      "notes": "Réponse reçue à la suite du commentaire YouTube : DjymTV ne recherche pas de monteur actuellement."
     },
     {
       "id": "leonax",
@@ -90,7 +90,7 @@
         "YouTube"
       ],
       "contact_channel": "E-mail",
-      "status": "Message envoyé",
+      "status": "En attente de réponse",
       "status_type": "waiting",
       "response": "En attente de réponse.",
       "next_step": "Attendre une réponse puis relancer si nécessaire.",
@@ -105,7 +105,7 @@
         "YouTube"
       ],
       "contact_channel": "E-mail",
-      "status": "Message envoyé",
+      "status": "En attente de réponse",
       "status_type": "waiting",
       "response": "En attente de réponse.",
       "next_step": "Attendre une réponse puis relancer si nécessaire.",
@@ -121,7 +121,7 @@
         "Twitch"
       ],
       "contact_channel": "E-mail",
-      "status": "Message envoyé",
+      "status": "En attente de réponse",
       "status_type": "waiting",
       "response": "En attente de réponse.",
       "next_step": "Attendre une réponse puis relancer si nécessaire.",
