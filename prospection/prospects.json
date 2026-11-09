@@ -1,6 +1,6 @@
 {
   "updated_at": "2026-11-09",
-  "description": "Suivi de la première vague de prospection TTS Montage.",
+  "description": "Suivi des prospects TTS Montage, première et deuxième vagues de prospection.",
   "prospects": [
     {
       "id": "ravswals",
@@ -75,13 +75,13 @@
         "Twitch"
       ],
       "contact_channel": "YouTube",
-      "status": "Commentaire de prise de contact",
+      "status": "Réponse reçue — Pas de besoin actuellement",
       "status_type": "waiting",
-      "response": "Pas encore de réponse confirmée dans le suivi.",
-      "next_step": "Vérifier si le commentaire a reçu une réponse et chercher un moyen de contact privé si nécessaire.",
+      "response": "A indiqué qu'il ne recherchait pas de monteur.",
+      "next_step": "Aucune relance prévue pour le moment ; reprendre contact uniquement si sa situation évolue.",
       "opportunity": "Évaluer si une aide au montage pourrait lui faire gagner du temps, sans bouleverser son format actuel.",
       "contact_date": null,
-      "notes": "Ses formats courts semblent déjà avoir une identité éditoriale affirmée."
+      "notes": "Réponse reçue à la suite du commentaire YouTube. Le créateur ne recherche pas de monteur actuellement."
     },
     {
       "id": "leonax",
@@ -97,6 +97,37 @@
       "opportunity": "Créer des formats courts humoristiques à partir de ses vidéos : mèmes, références, SFX, sous-titres dynamiques et effets visuels, pour développer sa visibilité.",
       "contact_date": null,
       "notes": "La proposition met l'accent sur un style de montage fun et divertissant, au-delà du simple découpage d'extraits."
+    },
+    {
+      "id": "heyar",
+      "name": "Heyar",
+      "platforms": [
+        "YouTube"
+      ],
+      "contact_channel": "E-mail",
+      "status": "Message envoyé",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre une réponse puis relancer si nécessaire.",
+      "opportunity": "Comprendre son organisation actuelle pour le montage de ses vidéos et Shorts ; éventuel renfort pour lui faire gagner du temps.",
+      "contact_date": "2026-11-09",
+      "notes": "Deuxième liste de prospection. Chaîne déjà bien travaillée et présence de Shorts. Premier message envoyé pour savoir s'il gère lui-même ses montages."
+    },
+    {
+      "id": "slashingcreeps",
+      "name": "SlashingCreeps",
+      "platforms": [
+        "YouTube",
+        "Twitch"
+      ],
+      "contact_channel": "E-mail",
+      "status": "Message envoyé",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre une réponse puis relancer si nécessaire.",
+      "opportunity": "Prendre en charge la sélection des meilleurs moments de streams et leur transformation en Shorts travaillés : sous-titres dynamiques, zooms, cuts et effets sonores.",
+      "contact_date": "2026-11-09",
+      "notes": "Deuxième liste de prospection. Univers Hack'n'Slash / Action-RPG, notamment Path of Exile 2. Shorts actuels surtout basés sur la sélection d'un moment de stream, avec peu de montage. Le message propose de développer ce format sans dénaturer son contenu."
     }
   ]
 }
