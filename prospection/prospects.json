@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09",
+  "updated_at": "2026-11-10",
   "description": "Suivi des prospects TTS Montage, première et deuxième vagues de prospection.",
   "prospects": [
     {
@@ -45,11 +45,11 @@
       "contact_channel": "Discord — modérateur",
       "status": "En attente de réponse",
       "status_type": "waiting",
-      "response": "En attente de retour du modérateur.",
-      "next_step": "Attendre de savoir si le modérateur peut transmettre le message ou indiquer un contact direct.",
+      "response": "Le modérateur a indiqué que le budget était le principal frein : le créateur ne gagne pas suffisamment pour déléguer le montage actuellement.",
+      "next_step": "Ne pas insister commercialement ; rester disponible si sa situation évolue.",
       "opportunity": "Échanger sur le montage de ses contenus YouTube et Twitch.",
       "contact_date": null,
-      "notes": "Bonnet et LessKrau désignent le même créateur."
+      "notes": "Le modérateur a répondu et a expliqué que le budget ne permettait pas actuellement de payer un monteur. L'utilisateur lui a transmis gratuitement quelques conseils sur la réalisation de best-of RimWorld (sélection des réactions, zooms, inserts, memes, textes et bruitages) afin de garder un bon contact et de laisser la porte ouverte à une collaboration future."
     },
     {
       "id": "poney-club",
@@ -128,6 +128,39 @@
       "opportunity": "Prendre en charge la sélection des meilleurs moments de streams et leur transformation en Shorts travaillés : sous-titres dynamiques, zooms, cuts et effets sonores.",
       "contact_date": "2026-11-09",
       "notes": "Deuxième liste de prospection. Univers Hack'n'Slash / Action-RPG, notamment Path of Exile 2. Shorts actuels surtout basés sur la sélection d'un moment de stream, avec peu de montage. Le message propose de développer ce format sans dénaturer son contenu."
+    },
+    {
+      "id": "adei-dofus-touch",
+      "name": "Adei Dofus Touch",
+      "platforms": [
+        "YouTube",
+        "Discord",
+        "TikTok",
+        "Instagram"
+      ],
+      "contact_channel": "Discord",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "Premier message envoyé ; en attente de réponse.",
+      "next_step": "Attendre une réponse puis relancer si nécessaire.",
+      "opportunity": "Exploiter les vidéos existantes pour créer des formats courts humoristiques, avec sélection et montage pris en charge par TTS Montage, puis déclinaison sur YouTube Shorts, TikTok et Instagram Reels.",
+      "contact_date": "2026-11-10",
+      "notes": "Message envoyé sur Discord. Proposition : transformer ses vidéos existantes en formats courts humoristiques (memes, sous-titres dynamiques, effets), sans travail supplémentaire pour lui en dehors de la publication."
+    },
+    {
+      "id": "shone",
+      "name": "Shone",
+      "platforms": [
+        "YouTube"
+      ],
+      "contact_channel": "Commentaire YouTube",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "Commentaire envoyé sur sa dernière vidéo ; en attente de réponse.",
+      "next_step": "Attendre une réponse puis relancer si nécessaire.",
+      "opportunity": "Développer une deuxième approche de Shorts humoristiques à partir de ses vidéos, en complément de son format actuel basé sur une image fixe, un titre et un meme.",
+      "contact_date": "2026-11-10",
+      "notes": "Ses Shorts humoristiques existants font environ 1 200 à 4 200 vues malgré un format très simple. Le message valorise le concept existant et propose d'explorer des formats plus dynamiques à partir de ses vidéos."
     }
   ]
 }
