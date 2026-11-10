@@ -154,13 +154,13 @@
         "YouTube"
       ],
       "contact_channel": "Commentaire YouTube",
-      "status": "En attente de réponse",
-      "status_type": "waiting",
-      "response": "Commentaire envoyé sur sa dernière vidéo ; en attente de réponse.",
-      "next_step": "Attendre une réponse puis relancer si nécessaire.",
+      "status": "Échanges engagés",
+      "status_type": "validation",
+      "response": "A répondu au commentaire YouTube et a proposé de poursuivre la discussion sur Discord (identifiant : shone_proo).",
+      "next_step": "Ajouter Shone sur Discord et échanger sur son organisation, ses formats actuels et son intérêt pour des Shorts humoristiques plus dynamiques.",
       "opportunity": "Développer une deuxième approche de Shorts humoristiques à partir de ses vidéos, en complément de son format actuel basé sur une image fixe, un titre et un meme.",
       "contact_date": "2026-11-10",
-      "notes": "Ses Shorts humoristiques existants font environ 1 200 à 4 200 vues malgré un format très simple. Le message valorise le concept existant et propose d'explorer des formats plus dynamiques à partir de ses vidéos."
+      "notes": "Ses Shorts humoristiques existants font environ 1 200 à 4 200 vues malgré un format très simple. Après le commentaire envoyé sur sa dernière vidéo, Shone a répondu : « Salut, si tu veux m’ajouter pour discuter sur discord bg : shone_proo ». Contact Discord proposé directement par le créateur."
     }
   ]
 }
