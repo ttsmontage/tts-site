@@ -139,13 +139,13 @@
         "Instagram"
       ],
       "contact_channel": "Discord",
-      "status": "En attente de réponse",
-      "status_type": "waiting",
-      "response": "Premier message envoyé ; en attente de réponse.",
-      "next_step": "Attendre une réponse puis relancer si nécessaire.",
+      "status": "Refusé",
+      "status_type": "refused",
+      "response": "Ne dispose pas du budget nécessaire pour financer la prestation actuellement.",
+      "next_step": "Ne pas relancer commercialement pour le moment ; reprendre éventuellement contact si sa situation financière évolue.",
       "opportunity": "Exploiter les vidéos existantes pour créer des formats courts humoristiques, avec sélection et montage pris en charge par TTS Montage, puis déclinaison sur YouTube Shorts, TikTok et Instagram Reels.",
       "contact_date": "2026-11-10",
-      "notes": "Message envoyé sur Discord. Proposition : transformer ses vidéos existantes en formats courts humoristiques (memes, sous-titres dynamiques, effets), sans travail supplémentaire pour lui en dehors de la publication."
+      "notes": "Échanges sur Discord autour d'une proposition de Shorts humoristiques à partir de ses vidéos existantes. Le frein identifié est le budget : le créateur ne peut pas financer la prestation actuellement. À classer comme refusé, comme Shone ; ne pas chercher à convaincre en baissant davantage les tarifs."
     },
     {
       "id": "shone",
