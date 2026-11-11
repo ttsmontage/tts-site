@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10",
+  "updated_at": "2026-11-11",
   "description": "Suivi des prospects TTS Montage, première et deuxième vagues de prospection.",
   "prospects": [
     {
@@ -154,13 +154,20 @@
         "YouTube"
       ],
       "contact_channel": "Commentaire YouTube",
-      "status": "Échanges engagés",
-      "status_type": "validation",
-      "response": "A répondu au commentaire YouTube et a proposé de poursuivre la discussion sur Discord (identifiant : shone_proo).",
-      "next_step": "Ajouter Shone sur Discord et échanger sur son organisation, ses formats actuels et son intérêt pour des Shorts humoristiques plus dynamiques.",
-      "opportunity": "Développer une deuxième approche de Shorts humoristiques à partir de ses vidéos, en complément de son format actuel basé sur une image fixe, un titre et un meme.",
+      "status": "Refusé",
+      "status_type": "refused",
+      "response": "A décliné la proposition car sa chaîne génère actuellement trop peu de revenus pour investir dans des contenus Shorts supplémentaires.",
+      "next_step": "Ne pas insister ni proposer une nouvelle baisse de tarif. Garder un bon contact et reprendre éventuellement la discussion si sa situation financière évolue.",
+      "opportunity": "Potentiel éditorial identifié : décliner ses vidéos et lives en Shorts naturels, sans montage excessivement rapide, puis diffuser sur YouTube Shorts, TikTok et Instagram Reels. Pas de budget disponible actuellement.",
       "contact_date": "2026-11-10",
-      "notes": "Ses Shorts humoristiques existants font environ 1 200 à 4 200 vues malgré un format très simple. Après le commentaire envoyé sur sa dernière vidéo, Shone a répondu : « Salut, si tu veux m’ajouter pour discuter sur discord bg : shone_proo ». Contact Discord proposé directement par le créateur."
+      "notes": "Échanges engagés sur YouTube puis Discord. Shone aime le montage mais travaille principalement sur mobile avec CapCut et préfère un style naturel, à contre-courant des Shorts surchargés. Proposition faite : 4 Shorts par mois à 25 € pièce, premier Short offert, gestion des publications TikTok et Instagram, accompagnement et retours pour faire évoluer le format ensemble. Il a décliné en expliquant que sa chaîne rapporte trop peu pour investir autant dans les contenus courts. Conclusion commerciale : le frein est le budget, pas un rejet du travail ou du style proposé. Ne pas continuer à baisser les prix pour convaincre des créateurs sans capacité d'investissement."
     }
+  ],
+  "prospecting_lessons": [
+    "Évaluer la capacité et la volonté d'investissement des prospects, pas seulement leur besoin potentiel de montage.",
+    "Repérer des signaux de monétisation ou de budget : sponsors, partenariats, affiliation, produits/services, activité commerciale et régularité de l'audience.",
+    "Ne pas supposer qu'un tarif réduit résoudra un manque de budget structurel.",
+    "Définir précisément le périmètre des offres : recherche des passages, montage, nombre de Shorts, publication et gestion des réseaux sociaux sont des tâches distinctes à valoriser.",
+    "Présenter les formats courts comme un levier de découverte et un investissement possible, sans garantir de résultats ni de rentabilité."
   ]
 }
