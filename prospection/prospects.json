@@ -43,13 +43,13 @@
         "Discord"
       ],
       "contact_channel": "Discord — modérateur",
-      "status": "En attente de réponse",
-      "status_type": "waiting",
-      "response": "Le modérateur a indiqué que le budget était le principal frein : le créateur ne gagne pas suffisamment pour déléguer le montage actuellement.",
-      "next_step": "Ne pas insister commercialement ; rester disponible si sa situation évolue.",
+      "status": "Refusé",
+      "status_type": "refused",
+      "response": "Le créateur ne dispose pas du budget nécessaire pour déléguer le montage actuellement.",
+      "next_step": "Ne pas relancer commercialement. Garder un bon contact et reprendre éventuellement la discussion si sa situation évolue.",
       "opportunity": "Échanger sur le montage de ses contenus YouTube et Twitch.",
       "contact_date": null,
-      "notes": "Le modérateur a répondu et a expliqué que le budget ne permettait pas actuellement de payer un monteur. L'utilisateur lui a transmis gratuitement quelques conseils sur la réalisation de best-of RimWorld (sélection des réactions, zooms, inserts, memes, textes et bruitages) afin de garder un bon contact et de laisser la porte ouverte à une collaboration future."
+      "notes": "Le modérateur a indiqué que le budget était le principal frein : le créateur ne gagne pas suffisamment pour payer un monteur actuellement. L'utilisateur lui a transmis gratuitement quelques conseils sur la réalisation de best-of RimWorld (sélection des réactions, zooms, inserts, memes, textes et bruitages) afin de garder un bon contact. Aucune collaboration rémunérée envisageable pour le moment."
     },
     {
       "id": "poney-club",
