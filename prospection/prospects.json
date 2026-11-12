@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11",
+  "updated_at": "2026-11-12",
   "description": "Suivi des prospects TTS Montage, première et deuxième vagues de prospection.",
   "prospects": [
     {
@@ -161,13 +161,124 @@
       "opportunity": "Potentiel éditorial identifié : décliner ses vidéos et lives en Shorts naturels, sans montage excessivement rapide, puis diffuser sur YouTube Shorts, TikTok et Instagram Reels. Pas de budget disponible actuellement.",
       "contact_date": "2026-11-10",
       "notes": "Échanges engagés sur YouTube puis Discord. Shone aime le montage mais travaille principalement sur mobile avec CapCut et préfère un style naturel, à contre-courant des Shorts surchargés. Proposition faite : 4 Shorts par mois à 25 € pièce, premier Short offert, gestion des publications TikTok et Instagram, accompagnement et retours pour faire évoluer le format ensemble. Il a décliné en expliquant que sa chaîne rapporte trop peu pour investir autant dans les contenus courts. Conclusion commerciale : le frein est le budget, pas un rejet du travail ou du style proposé. Ne pas continuer à baisser les prix pour convaincre des créateurs sans capacité d'investissement."
+    },
+    {
+      "id": "goatesque",
+      "name": "Goatesque",
+      "platforms": [
+        "YouTube"
+      ],
+      "contact_channel": "Commentaire YouTube",
+      "status": "À recontacter plus tard",
+      "status_type": "follow_up",
+      "response": "Intéressé par l'idée du montage, mais ne dispose pas du budget nécessaire actuellement ; souhaite éventuellement en reparler si sa monétisation reprend.",
+      "next_step": "Ne pas relancer commercialement pour le moment. Reprendre contact dans quelques mois uniquement si sa situation de monétisation évolue.",
+      "opportunity": "Montage de vidéos Dofus, aventures et formats courts.",
+      "contact_date": "2026-11-12",
+      "notes": "A expliqué que ses faibles revenus ne lui permettent pas de payer un monteur actuellement, même si travailler avec un monteur est un rêve. Réponse amicale envoyée pour garder le contact. Ne pas baisser les tarifs."
+    },
+    {
+      "id": "dofuzeum",
+      "name": "Dofuzéum",
+      "platforms": [
+        "YouTube"
+      ],
+      "contact_channel": "Commentaire YouTube",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse puis qualifier son organisation et ses besoins.",
+      "opportunity": "Créer des Shorts à partir de ses vidéos longues Dofus Rétro, notamment ses explications, son humour et ses aventures ; éventuellement explorer d'autres formats.",
+      "contact_date": "2026-11-12",
+      "notes": "Commentaire envoyé pour savoir s'il envisage de développer les Shorts à partir de ses vidéos longues. Environ 17k abonnés et activité récente ; audience mensuelle et code créateur Ankama repérés lors de l'analyse. Prospect intéressant, mais budget non confirmé."
+    },
+    {
+      "id": "last-baroudeur",
+      "name": "Last-baroudeur",
+      "platforms": [
+        "YouTube",
+        "Twitch"
+      ],
+      "contact_channel": "Commentaire YouTube",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse pour savoir s'il monte lui-même ses contenus ou travaille déjà avec quelqu'un.",
+      "opportunity": "Montage de vidéos YouTube, best-of de lives/aventures et formats courts.",
+      "contact_date": "2026-11-12",
+      "notes": "Environ 27k abonnés YouTube. Publie fréquemment des Shorts de type actualité/commentaire facecam. Le message demande comment il gère actuellement le montage et propose aussi un renfort sur les vidéos longues et best-ofs. Ne pas conclure qu'il a déjà un monteur sans sa réponse."
+    },
+    {
+      "id": "sigielll",
+      "name": "Sigielll",
+      "platforms": [
+        "YouTube",
+        "Twitch"
+      ],
+      "contact_channel": "Commentaire YouTube",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse.",
+      "opportunity": "Best-ofs de son aventure Dofus Ombre et Shorts issus des moments à risque, imprévus et marquants.",
+      "contact_date": "2026-11-12",
+      "notes": "Chaîne de petite taille (environ 1,36k abonnés selon les données consultées), donc capacité budgétaire incertaine. Contacté pour son potentiel éditorial spécifique ; à traiter comme exception plutôt que cible prioritaire."
+    },
+    {
+      "id": "ido",
+      "name": "Ido",
+      "platforms": [
+        "YouTube"
+      ],
+      "contact_channel": "Commentaire YouTube",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse.",
+      "opportunity": "Best-ofs d'aventures Dofus Rétro, montage de sessions de jeu et Shorts.",
+      "contact_date": "2026-11-12",
+      "notes": "Environ 2,7k abonnés ; vues récentes encourageantes malgré une audience encore modeste. Contacté pour connaître son organisation de montage. Prospect secondaire au regard du nouveau critère de taille et de capacité budgétaire."
+    },
+    {
+      "id": "proteam",
+      "name": "ProTeam",
+      "platforms": [
+        "YouTube",
+        "Twitch"
+      ],
+      "contact_channel": "Commentaire YouTube",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse et qualifier son organisation actuelle de montage.",
+      "opportunity": "Renfort éventuel sur les aventures Dofus Rétro, vidéos YouTube et best-ofs.",
+      "contact_date": "2026-11-12",
+      "notes": "Environ 33,8k abonnés selon les données consultées. L'utilisateur a personnalisé le commentaire en évoquant ses aventures et son contenu, car il connaît déjà un peu le créateur. Il publie déjà des best-ofs travaillés : vérifier s'il travaille avec un monteur avant de proposer une offre."
+    },
+    {
+      "id": "huz",
+      "name": "HUZ",
+      "platforms": [
+        "YouTube",
+        "Twitch"
+      ],
+      "contact_channel": "Commentaire YouTube",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse ; si elle arrive, identifier les besoins éventuels et l'organisation de production.",
+      "opportunity": "Éventuel renfort sur les vidéos YouTube, contenus issus des lives ou certains formats spécifiques.",
+      "contact_date": "2026-11-12",
+      "notes": "Environ 140k abonnés et activité soutenue, avec partenariats et code créateur. Commentaire laissé sous sa dernière vidéo. Créateur important avec une organisation probablement déjà structurée ; ne pas présumer d'un besoin ni d'un budget disponible."
     }
   ],
   "prospecting_lessons": [
+    "Prioriser les créateurs dépassant environ 30 000 abonnés, avec des vues récentes régulières et une activité soutenue ; accepter des exceptions seulement si les signaux sont particulièrement prometteurs.",
     "Évaluer la capacité et la volonté d'investissement des prospects, pas seulement leur besoin potentiel de montage.",
     "Repérer des signaux de monétisation ou de budget : sponsors, partenariats, affiliation, produits/services, activité commerciale et régularité de l'audience.",
     "Ne pas supposer qu'un tarif réduit résoudra un manque de budget structurel.",
     "Définir précisément le périmètre des offres : recherche des passages, montage, nombre de Shorts, publication et gestion des réseaux sociaux sont des tâches distinctes à valoriser.",
-    "Présenter les formats courts comme un levier de découverte et un investissement possible, sans garantir de résultats ni de rentabilité."
+    "Présenter les formats courts comme un levier de découverte et un investissement possible, sans garantir de résultats ni de rentabilité.",
+    "Personnaliser chaque premier message en montrant une connaissance réelle du contenu du créateur, plutôt que d'envoyer un commentaire générique."
   ]
 }
