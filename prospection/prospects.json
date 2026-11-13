@@ -476,6 +476,21 @@
       "opportunity": "Transformer les vidéos longues Minecraft, publiées environ une fois par mois, en Shorts plus travaillés. Le créateur publie déjà des Shorts quotidiens qui semblent être des contenus conçus spécifiquement pour ce format.",
       "contact_date": "2026-11-13",
       "notes": "Prospect validé et contacté. L'utilisateur a observé une publication de vidéo longue environ mensuelle et des Shorts quotidiens, apparemment tournés spécifiquement plutôt qu'extraits des vidéos longues. Commentaire YouTube envoyé pour demander s'il réalise lui-même ses montages et s'il envisage de décliner davantage ses vidéos longues en formats courts."
+    },
+    {
+      "id": "klinko-tv",
+      "name": "Klinko TV",
+      "platforms": [
+        "YouTube"
+      ],
+      "contact_channel": "Commentaire YouTube",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "Commentaire de prise de contact publié ; en attente de réponse.",
+      "next_step": "Attendre sa réponse pour comprendre son organisation de montage sur la chaîne gaming et son intérêt éventuel pour reprendre les Shorts.",
+      "opportunity": "Renfort éventuel sur le montage des vidéos gaming publiées environ deux fois par semaine et reprise/développement des Shorts, actuellement peu travaillés et interrompus depuis avril environ.",
+      "contact_date": "2026-11-13",
+      "notes": "Prospect contacté par commentaire sous une vidéo YouTube de sa chaîne gaming secondaire. L'utilisateur a observé environ deux vidéos gaming par semaine ; les Shorts précédents étaient très simples et ne sont plus publiés depuis avril environ. Sa chaîne principale semble davantage orientée IRL, avec des Shorts IRL bricolage. Premier message exploratoire demandant s'il réalise lui-même ses montages et s'il envisage de reprendre les Shorts."
     }
   ],
   "prospecting_lessons": [
