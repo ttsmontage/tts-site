@@ -26,7 +26,7 @@
 <div class="stat"><strong id="validation">—</strong><span>En cours de validation</span></div>
 </div>
 <div class="toolbar"><div class="filters" role="group" aria-label="Filtrer les prospects">
-<button class="filter active" data-filter="all">Tous</button><button class="filter" data-filter="waiting">En attente</button><button class="filter" data-filter="validation">Échanges engagés</button><button class="filter" data-filter="refused">Refusé</button>
+<button class="filter active" data-filter="all">Tous</button><button class="filter" data-filter="to_contact">À contacter</button><button class="filter" data-filter="waiting">En attente</button><button class="filter" data-filter="validation">Échanges engagés</button><button class="filter" data-filter="refused">Refusé</button>
 </div><input id="search" type="search" placeholder="Rechercher un créateur…" aria-label="Rechercher un créateur"></div>
 <section class="grid" id="grid" aria-live="polite"></section><div class="empty" id="empty">Aucun prospect ne correspond à cette recherche.</div>
 </main>
@@ -35,10 +35,10 @@
 const grid=document.getElementById('grid'),search=document.getElementById('search');let records=[],filter='all';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function field(label,value){return value?'<div class="field"><b>'+esc(label)+'</b><p>'+esc(value)+'</p></div>':''}
-const stateOrder=['waiting','validation','refused'];
-const stateLabels={refused:'Refusé',waiting:'En attente de réponse',validation:'En cours de validation'};
+const stateOrder=['to_contact','waiting','validation','refused'];
+const stateLabels={to_contact:'À contacter',refused:'Refusé',waiting:'En attente de réponse',validation:'En cours de validation'};
 function render(){const q=search.value.trim().toLowerCase();const shown=records.filter(p=>(filter==='all'||p.status_type===filter)&&[p.name,p.status,p.opportunity,p.contact_channel,...(p.platforms||[])].join(' ').toLowerCase().includes(q));grid.innerHTML=stateOrder.map(state=>{const group=shown.filter(p=>p.status_type===state);if(!group.length)return '';return '<div class="group-title">'+esc(stateLabels[state])+' <span>'+group.length+'</span></div>'+group.map(p=>'<article class="card"><div class="card-head"><div><h2>'+esc(p.name)+'</h2><div class="platforms">'+esc((p.platforms||[]).join(' · '))+'</div></div><span class="pill '+esc(p.status_type)+'">'+esc(p.status)+'</span></div><div class="meta"><span class="tag">Contact : '+esc(p.contact_channel)+'</span></div>'+field('Opportunité',p.opportunity)+field('Prochaine étape',p.next_step)+'<details class="details"><summary>Voir le suivi détaillé</summary>'+field('Réponse',p.response)+field('Notes',p.notes)+field('Date de contact',p.contact_date||'Non renseignée')+'</details></article>').join('')}).join('');document.getElementById('empty').style.display=shown.length?'none':'block';}
 document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;render()}));search.addEventListener('input',render);
-fetch('./prospects.json').then(r=>{if(!r.ok)throw Error('Chargement impossible');return r.json()}).then(d=>{records=d.prospects||[];document.getElementById('total').textContent=records.length;document.getElementById('waiting').textContent=records.filter(x=>x.status_type==='waiting').length;document.getElementById('validation').textContent=records.filter(x=>x.status_type==='validation').length;document.getElementById('updated').textContent=d.updated_at||'—';render()}).catch(()=>{grid.innerHTML='<p style="color:#f2c879">Impossible de charger les données des prospects. Réessaie dans quelques instants.</p>'});
+fetch('./prospects.json').then(r=>{if(!r.ok)throw Error('Chargement impossible');return r.json()}).then(d=>{records=d.prospects||[];document.getElementById('total').textContent=records.length;document.getElementById('toContact').textContent=records.filter(x=>x.status_type==='to_contact').length;document.getElementById('waiting').textContent=records.filter(x=>x.status_type==='waiting').length;document.getElementById('validation').textContent=records.filter(x=>x.status_type==='validation').length;document.getElementById('updated').textContent=d.updated_at||'—';render()}).catch(()=>{grid.innerHTML='<p style="color:#f2c879">Impossible de charger les données des prospects. Réessaie dans quelques instants.</p>'});
 </script>
 </body></html>
