@@ -461,6 +461,21 @@
       "opportunity": "Éventuelle exploitation des vidéos longues Minecraft en formats courts ; comprendre son organisation actuelle de montage et de publication.",
       "contact_date": "2026-11-13",
       "notes": "Prospect validé pour prise de contact. Shorts publiés régulièrement ; vidéos longues observées à un rythme approximatif d'une par mois. Mail exploratoire préparé pour demander s'il réalise lui-même ses montages et s'il envisage de décliner davantage ses vidéos longues en formats courts. Adresse e-mail volontairement non enregistrée dans le tableau public."
+    },
+    {
+      "id": "zelfro",
+      "name": "Zelfro",
+      "platforms": [
+        "YouTube"
+      ],
+      "contact_channel": "Commentaire YouTube",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "Commentaire de prise de contact publié ; en attente de réponse.",
+      "next_step": "Attendre une réponse et évaluer son organisation de montage ainsi que son intérêt pour le recyclage de vidéos longues en Shorts.",
+      "opportunity": "Transformer les vidéos longues Minecraft, publiées environ une fois par mois, en Shorts plus travaillés. Le créateur publie déjà des Shorts quotidiens qui semblent être des contenus conçus spécifiquement pour ce format.",
+      "contact_date": "2026-11-13",
+      "notes": "Prospect validé et contacté. L'utilisateur a observé une publication de vidéo longue environ mensuelle et des Shorts quotidiens, apparemment tournés spécifiquement plutôt qu'extraits des vidéos longues. Commentaire YouTube envoyé pour demander s'il réalise lui-même ses montages et s'il envisage de décliner davantage ses vidéos longues en formats courts."
     }
   ],
   "prospecting_lessons": [
