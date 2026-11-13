@@ -454,12 +454,12 @@
         "YouTube"
       ],
       "contact_channel": "E-mail",
-      "status": "À contacter",
-      "status_type": "to_contact",
-      "response": "Premier contact à envoyer ; aucune réponse attendue pour le moment.",
-      "next_step": "Envoyer le mail de prise de contact, puis passer le statut à « En attente de réponse » une fois l'envoi confirmé.",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "Premier e-mail de prospection envoyé ; en attente de réponse.",
+      "next_step": "Attendre une réponse, puis évaluer son intérêt et ses besoins éventuels.",
       "opportunity": "Éventuelle exploitation des vidéos longues Minecraft en formats courts ; comprendre son organisation actuelle de montage et de publication.",
-      "contact_date": null,
+      "contact_date": "2026-11-13",
       "notes": "Prospect validé pour prise de contact. Shorts publiés régulièrement ; vidéos longues observées à un rythme approximatif d'une par mois. Mail exploratoire préparé pour demander s'il réalise lui-même ses montages et s'il envisage de décliner davantage ses vidéos longues en formats courts. Adresse e-mail volontairement non enregistrée dans le tableau public."
     }
   ],
