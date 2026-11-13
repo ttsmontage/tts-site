@@ -1,6 +1,6 @@
 {
   "updated_at": "2026-11-13",
-  "description": "Suivi des prospects TTS Montage, première et deuxième vagues de prospection.",
+  "description": "Suivi des prospects TTS Montage, incluant les vagues de prospection gaming élargies à plusieurs jeux et plateformes.",
   "prospects": [
     {
       "id": "alex-novia",
@@ -285,6 +285,167 @@
       "opportunity": "Éventuel renfort sur les vidéos YouTube, contenus issus des lives ou certains formats spécifiques.",
       "contact_date": "2026-11-12",
       "notes": "Environ 140k abonnés et activité soutenue, avec partenariats et code créateur. Commentaire laissé sous sa dernière vidéo. Créateur important avec une organisation probablement déjà structurée ; ne pas présumer d'un besoin ni d'un budget disponible."
+    },
+    {
+      "id": "langoc",
+      "name": "Langoc",
+      "platforms": [
+        "YouTube"
+      ],
+      "contact_channel": "E-mail",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse pour comprendre comment il organise le dérushage et le montage de ses vidéos.",
+      "opportunity": "Dérushage de longues sessions Minecraft et sélection de passages ; création de Shorts légers respectant son style immersif.",
+      "contact_date": "2026-11-13",
+      "notes": "Email personnalisé envoyé à contact@langoc.tv. L'utilisateur apprécie son style calme et immersif, avec peu d'effets et des vidéos longues. Proposition exploratoire autour du dérushage et de formats courts sobres. Portfolio TTS Montage inclus."
+    },
+    {
+      "id": "omeega",
+      "name": "Omeega",
+      "platforms": [
+        "YouTube"
+      ],
+      "contact_channel": "Commentaire YouTube",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse pour savoir s'il réalise lui-même ses montages et s'il souhaite développer les formats courts.",
+      "opportunity": "Éventuel développement de Shorts à partir des vidéos Minecraft longues ; renfort de montage selon son organisation.",
+      "contact_date": "2026-11-13",
+      "notes": "Commentaire personnalisé envoyé. Publie régulièrement des vidéos longues Minecraft ; Shorts peu fréquents, dernier repéré environ un mois auparavant. Montage observé plutôt simple, centré sur les actions et moments amusants. Contact exploratoire."
+    },
+    {
+      "id": "martin-ponk",
+      "name": "Martin PonK",
+      "platforms": [
+        "YouTube",
+        "Twitch"
+      ],
+      "contact_channel": "Message privé Twitch",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse pour comprendre s'il souhaite développer YouTube et comment il exploite ses lives.",
+      "opportunity": "Éventuelle transformation de lives Twitch en best-ofs YouTube et formats courts.",
+      "contact_date": "2026-11-13",
+      "notes": "Chuchotement Twitch envoyé après découverte via une collaboration Minecraft avec Omeega. Environ 36,2k abonnés YouTube, chaîne peu active (3 vidéos, dernière environ 6 mois auparavant), mais plus de 77k followers Twitch et live récent. Message demandant s'il souhaite encore développer YouTube et s'il monte lui-même ses contenus."
+    },
+    {
+      "id": "dart",
+      "name": "Dart",
+      "platforms": [
+        "YouTube"
+      ],
+      "contact_channel": "Commentaire YouTube",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse sur son organisation de dérushage et de montage.",
+      "opportunity": "Dérushage de vidéos longues et sélection de moments ; développement de Shorts à partir des vidéos existantes.",
+      "contact_date": "2026-11-13",
+      "notes": "Commentaire YouTube envoyé après analyse de ses vidéos. Une vidéo récente comportait une collaboration commerciale World of Warships. Quatre Shorts repérés, datant de 2024. Style long format avec montage semblant surtout reposer sur le dérushage et une musique d'ambiance discrète."
+    },
+    {
+      "id": "theguill84",
+      "name": "TheGuill84",
+      "platforms": [
+        "YouTube",
+        "TikTok"
+      ],
+      "contact_channel": "Commentaire YouTube",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse pour identifier son organisation de montage et ses éventuels besoins de renfort.",
+      "opportunity": "Dérushage de vidéos longues, sélection de moments issus des lives et développement de formats courts.",
+      "contact_date": "2026-11-13",
+      "notes": "Commentaire YouTube envoyé. Environ 590k abonnés, vidéos longues tous les 3 à 4 jours, Shorts irréguliers (environ 1 à 3 par mois ou parfois aucun) et présence TikTok alimentée par des republications. Créateur invité au ZEvent. Le message demande s'il réalise lui-même le dérushage et le montage."
+    },
+    {
+      "id": "minoc",
+      "name": "Minoc",
+      "platforms": [
+        "YouTube",
+        "Instagram",
+        "Twitch"
+      ],
+      "contact_channel": "Commentaire YouTube",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse sur son montage et son intérêt éventuel pour les formats courts.",
+      "opportunity": "Déclinaison de vidéos longues et de lives en Shorts/Reels ; éventuel renfort sur le montage.",
+      "contact_date": "2026-11-13",
+      "notes": "Commentaire YouTube envoyé après découverte via les collaborations avec Omeega. Environ 438k abonnés, vidéos longues environ hebdomadaires, pas de Shorts actifs repérés, pas de compte TikTok identifié ; Instagram autour de 9k abonnés avec seulement deux publications vidéo. Également actif en live."
+    },
+    {
+      "id": "wyktaur",
+      "name": "Wyktaur",
+      "platforms": [
+        "YouTube",
+        "Instagram",
+        "Twitch"
+      ],
+      "contact_channel": "Message privé Twitch",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse pour comprendre comment il exploite ses lives et s'il délègue une partie du montage.",
+      "opportunity": "Dérushage de lives, best-ofs YouTube et création de Shorts/Reels à partir des streams.",
+      "contact_date": "2026-11-13",
+      "notes": "Chuchotement Twitch envoyé. Environ 369k abonnés YouTube et près de 22k followers Twitch ; live réalisé deux jours avant le contact. Vidéos longues environ mensuelles, Shorts arrêtés depuis 2025 et Instagram composé surtout de photos personnelles, sans Reels de moments de live repérés. L'utilisateur a dû envoyer le message en deux parties à cause de la limite Twitch ; privilégier des messages Twitch très courts (3 à 5 lignes)."
+    },
+    {
+      "id": "mathox",
+      "name": "MathoX",
+      "platforms": [
+        "YouTube",
+        "Twitch"
+      ],
+      "contact_channel": "E-mail",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse pour savoir s'il souhaite réactiver YouTube et exploiter ses lives.",
+      "opportunity": "Montage de best-ofs à partir des lives Twitch et création de formats courts pour relancer une présence vidéo sur YouTube.",
+      "contact_date": "2026-11-13",
+      "notes": "Email professionnel envoyé après impossibilité d'envoyer un chuchotement Twitch. Environ 336k abonnés dans la liste de collaboration. Pas de vidéo longue YouTube depuis environ quatre ans et pas de Shorts repérés, mais toujours actif en live avec les autres créateurs. Email court présentant TTS Montage et demandant s'il gère seul l'exploitation de ses lives."
+    },
+    {
+      "id": "guep",
+      "name": "Guep",
+      "platforms": [
+        "YouTube",
+        "Twitch"
+      ],
+      "contact_channel": "Message privé Twitch",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse ; si Twitch ne permet pas l'échange, utiliser son adresse professionnelle.",
+      "opportunity": "Exploitation des lives en Shorts, Reels et éventuellement best-ofs YouTube.",
+      "contact_date": "2026-11-13",
+      "notes": "Chuchotement Twitch envoyé. Environ 223k abonnés YouTube et 118k followers Twitch. Publie des vidéos longues environ mensuellement ; Shorts arrêtés depuis décembre 2025 environ. Le message demande s'il a envisagé de transformer ses lives en formats courts et s'il gère lui-même cette partie."
+    },
+    {
+      "id": "kevko-gta",
+      "name": "Kevko GTA",
+      "platforms": [
+        "YouTube",
+        "Instagram",
+        "TikTok",
+        "Snapchat"
+      ],
+      "contact_channel": "E-mail",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse pour savoir s'il travaille seul ou avec une équipe et s'il a besoin de renfort.",
+      "opportunity": "Renfort de montage sur plusieurs chaînes et développement de Shorts/Reels/TikTok à partir des vidéos et gameplays existants.",
+      "contact_date": "2026-11-13",
+      "notes": "Email envoyé à partenariats@kevko.fr. L'utilisateur a repéré plusieurs chaînes (YouTube principale, IRL, gaming secondaire, GTA, réaction, compilation, bonus) et une cadence annoncée d'une vidéo par jour. Pas de Shorts YouTube repérés ; quelques extraits verticaux de gameplay sur Instagram. Potentiel besoin de délégation ou de développement des formats courts, à confirmer car une équipe peut déjà être en place."
     }
   ],
   "prospecting_lessons": [
