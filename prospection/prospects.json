@@ -1,7 +1,22 @@
 {
-  "updated_at": "2026-11-12",
+  "updated_at": "2026-11-13",
   "description": "Suivi des prospects TTS Montage, première et deuxième vagues de prospection.",
   "prospects": [
+    {
+      "id": "alex-novia",
+      "name": "Alex Novia",
+      "platforms": [
+        "YouTube"
+      ],
+      "contact_channel": "Commentaire YouTube",
+      "status": "En attente de réponse",
+      "status_type": "waiting",
+      "response": "En attente de réponse.",
+      "next_step": "Attendre sa réponse pour comprendre comment il gère le montage de ses vidéos longues et de ses Shorts.",
+      "opportunity": "Éventuel dérushage de sessions GTA RP, sélection de moments intéressants et montage de formats courts ou best-ofs, selon son organisation et ses besoins.",
+      "contact_date": "2026-11-13",
+      "notes": "Commentaire personnalisé envoyé sous une vidéo YouTube. L'utilisateur a remarqué un rythme de publication soutenu, avec des Shorts quotidiens et des vidéos longues. Premier contact volontairement exploratoire : se présenter comme monteur vidéo professionnel et demander s'il réalise ses montages lui-même ou s'il est accompagné, sans proposer directement une prestation."
+    },
     {
       "id": "ravswals",
       "name": "RavsWals",
