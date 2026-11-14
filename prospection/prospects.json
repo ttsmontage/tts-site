@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13",
+  "updated_at": "2026-11-14",
   "description": "Suivi des prospects TTS Montage, incluant les vagues de prospection gaming élargies à plusieurs jeux et plateformes.",
   "prospects": [
     {
@@ -491,6 +491,22 @@
       "opportunity": "Renfort éventuel sur le montage des vidéos gaming publiées environ deux fois par semaine et reprise/développement des Shorts, actuellement peu travaillés et interrompus depuis avril environ.",
       "contact_date": "2026-11-13",
       "notes": "Prospect contacté par commentaire sous une vidéo YouTube de sa chaîne gaming secondaire. L'utilisateur a observé environ deux vidéos gaming par semaine ; les Shorts précédents étaient très simples et ne sont plus publiés depuis avril environ. Sa chaîne principale semble davantage orientée IRL, avec des Shorts IRL bricolage. Premier message exploratoire demandant s'il réalise lui-même ses montages et s'il envisage de reprendre les Shorts."
+    },
+    {
+      "id": "cijel",
+      "name": "Cijel",
+      "platforms": [
+        "YouTube",
+        "Discord"
+      ],
+      "contact_channel": "Message privé Discord",
+      "status": "Refusé (temporaire)",
+      "status_type": "refused",
+      "response": "A invité l'utilisateur à le contacter sur Discord ; le message a été envoyé, mais aucune réponse n'a été reçue depuis.",
+      "next_step": "Ne pas relancer pour le moment. Réactiver le prospect si Cijel répond ultérieurement.",
+      "opportunity": "Éventuelle prestation de montage autour de son contenu Dofus.",
+      "contact_date": null,
+      "notes": "Contact établi après que Cijel a demandé à être contacté sur Discord. En l'absence de réponse après l'envoi du message, le prospect est classé refusé temporairement afin de ne plus le compter parmi les opportunités actives. Le statut pourra être réactivé si Cijel reprend contact."
     }
   ],
   "prospecting_lessons": [
