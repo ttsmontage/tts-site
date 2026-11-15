@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-14",
-  "description": "Suivi des prospects TTS Montage, incluant les vagues de prospection gaming élargies à plusieurs jeux et plateformes.",
+  "updated_at": "2026-11-15",
+  "description": "Suivi des prospects TTS Montage. La prospection directe auprès des créateurs gaming est mise en pause au profit des agences recrutant des monteurs à distance.",
   "prospects": [
     {
       "id": "alex-novia",
@@ -324,13 +324,13 @@
         "Twitch"
       ],
       "contact_channel": "Message privé Twitch",
-      "status": "En attente de réponse",
-      "status_type": "waiting",
-      "response": "En attente de réponse.",
-      "next_step": "Attendre sa réponse pour comprendre s'il souhaite développer YouTube et comment il exploite ses lives.",
+      "status": "Refusé (sans réponse)",
+      "status_type": "refused",
+      "response": "Aucune réponse reçue après le message privé Twitch.",
+      "next_step": "Aucune relance prévue. Prospect clôturé.",
       "opportunity": "Éventuelle transformation de lives Twitch en best-ofs YouTube et formats courts.",
       "contact_date": "2026-11-13",
-      "notes": "Chuchotement Twitch envoyé après découverte via une collaboration Minecraft avec Omeega. Environ 36,2k abonnés YouTube, chaîne peu active (3 vidéos, dernière environ 6 mois auparavant), mais plus de 77k followers Twitch et live récent. Message demandant s'il souhaite encore développer YouTube et s'il monte lui-même ses contenus."
+      "notes": "Chuchotement Twitch envoyé après découverte via une collaboration Minecraft avec Omeega. Environ 36,2k abonnés YouTube, chaîne peu active (3 vidéos, dernière environ 6 mois auparavant), mais plus de 77k followers Twitch et live récent. Message demandant s'il souhaite encore développer YouTube et s'il monte lui-même ses contenus. Clôturé le 15/11/2026 : aucune réponse reçue au message privé Twitch ; l'utilisateur décide de ne pas poursuivre cette prospection."
     },
     {
       "id": "dart",
@@ -389,13 +389,13 @@
         "Twitch"
       ],
       "contact_channel": "Message privé Twitch",
-      "status": "En attente de réponse",
-      "status_type": "waiting",
-      "response": "En attente de réponse.",
-      "next_step": "Attendre sa réponse pour comprendre comment il exploite ses lives et s'il délègue une partie du montage.",
+      "status": "Refusé (sans réponse)",
+      "status_type": "refused",
+      "response": "Aucune réponse reçue après le message privé Twitch.",
+      "next_step": "Aucune relance prévue. Prospect clôturé.",
       "opportunity": "Dérushage de lives, best-ofs YouTube et création de Shorts/Reels à partir des streams.",
       "contact_date": "2026-11-13",
-      "notes": "Chuchotement Twitch envoyé. Environ 369k abonnés YouTube et près de 22k followers Twitch ; live réalisé deux jours avant le contact. Vidéos longues environ mensuelles, Shorts arrêtés depuis 2025 et Instagram composé surtout de photos personnelles, sans Reels de moments de live repérés. L'utilisateur a dû envoyer le message en deux parties à cause de la limite Twitch ; privilégier des messages Twitch très courts (3 à 5 lignes)."
+      "notes": "Chuchotement Twitch envoyé. Environ 369k abonnés YouTube et près de 22k followers Twitch ; live réalisé deux jours avant le contact. Vidéos longues environ mensuelles, Shorts arrêtés depuis 2025 et Instagram composé surtout de photos personnelles, sans Reels de moments de live repérés. L'utilisateur a dû envoyer le message en deux parties à cause de la limite Twitch ; privilégier des messages Twitch très courts (3 à 5 lignes). Clôturé le 15/11/2026 : aucune réponse reçue au message privé Twitch ; l'utilisateur décide de ne pas poursuivre cette prospection."
     },
     {
       "id": "mathox",
@@ -421,13 +421,13 @@
         "Twitch"
       ],
       "contact_channel": "Message privé Twitch",
-      "status": "En attente de réponse",
-      "status_type": "waiting",
-      "response": "En attente de réponse.",
-      "next_step": "Attendre sa réponse ; si Twitch ne permet pas l'échange, utiliser son adresse professionnelle.",
+      "status": "Refusé (sans réponse)",
+      "status_type": "refused",
+      "response": "Aucune réponse reçue après le message privé Twitch.",
+      "next_step": "Aucune relance prévue. Prospect clôturé.",
       "opportunity": "Exploitation des lives en Shorts, Reels et éventuellement best-ofs YouTube.",
       "contact_date": "2026-11-13",
-      "notes": "Chuchotement Twitch envoyé. Environ 223k abonnés YouTube et 118k followers Twitch. Publie des vidéos longues environ mensuellement ; Shorts arrêtés depuis décembre 2025 environ. Le message demande s'il a envisagé de transformer ses lives en formats courts et s'il gère lui-même cette partie."
+      "notes": "Chuchotement Twitch envoyé. Environ 223k abonnés YouTube et 118k followers Twitch. Publie des vidéos longues environ mensuellement ; Shorts arrêtés depuis décembre 2025 environ. Le message demande s'il a envisagé de transformer ses lives en formats courts et s'il gère lui-même cette partie. Clôturé le 15/11/2026 : aucune réponse reçue au message privé Twitch ; l'utilisateur décide de ne pas poursuivre cette prospection."
     },
     {
       "id": "kevko-gta",
@@ -516,6 +516,7 @@
     "Ne pas supposer qu'un tarif réduit résoudra un manque de budget structurel.",
     "Définir précisément le périmètre des offres : recherche des passages, montage, nombre de Shorts, publication et gestion des réseaux sociaux sont des tâches distinctes à valoriser.",
     "Présenter les formats courts comme un levier de découverte et un investissement possible, sans garantir de résultats ni de rentabilité.",
-    "Personnaliser chaque premier message en montrant une connaissance réelle du contenu du créateur, plutôt que d'envoyer un commentaire générique."
+    "Personnaliser chaque premier message en montrant une connaissance réelle du contenu du créateur, plutôt que d'envoyer un commentaire générique.",
+    "Mettre en pause la prospection individuelle auprès des créateurs Twitch/gaming lorsque les messages restent sans réponse ou que les budgets sont insuffisants ; prioriser les agences et équipes qui recrutent des monteurs à distance, avec tests de montage et conditions de rémunération claires."
   ]
 }
