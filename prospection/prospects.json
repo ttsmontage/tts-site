@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-15",
-  "description": "Suivi des prospects TTS Montage. La prospection directe auprès des créateurs gaming est mise en pause au profit des agences recrutant des monteurs à distance.",
+  "updated_at": "2026-11-16",
+  "description": "Suivi des prospects TTS Montage. La prospection directe auprès des créateurs gaming est mise en pause au profit des agences recrutant des monteurs à distance. Les agences sont suivies dans une catégorie dédiée avec les statuts En attente, Répondu et Pas répondu.",
   "prospects": [
     {
       "id": "alex-novia",
@@ -507,6 +507,38 @@
       "opportunity": "Éventuelle prestation de montage autour de son contenu Dofus.",
       "contact_date": null,
       "notes": "Contact établi après que Cijel a demandé à être contacté sur Discord. En l'absence de réponse après l'envoi du message, le prospect est classé refusé temporairement afin de ne plus le compter parmi les opportunités actives. Le statut pourra être réactivé si Cijel reprend contact."
+    },
+    {
+      "id": "axion-ia",
+      "name": "Axion-IA",
+      "category": "Agence",
+      "platforms": [
+        "Site de recrutement"
+      ],
+      "contact_channel": "Formulaire de candidature",
+      "status": "En attente",
+      "status_type": "waiting",
+      "response": "Candidature envoyée le 16/11/2026 ; en attente de réponse.",
+      "next_step": "Attendre un retour sur la candidature et les éventuelles missions disponibles.",
+      "opportunity": "Missions de montage vidéo à distance : formats courts, interviews, événements et coulisses. Tarifs proposés : 45 € (30 s), 60 € (60 s), 75 € (90 s), 130 € (3 min horizontal), 180 € (5 min horizontal), puis 30 € par minute supplémentaire.",
+      "contact_date": "2026-11-16",
+      "notes": "Candidature envoyée via le formulaire Axion-IA. Aucun test de montage n'était annoncé au dépôt de candidature. Axion-IA constitue un vivier pour de futures missions ; volume et démarrage non garantis."
+    },
+    {
+      "id": "agencefood",
+      "name": "AgenceFood",
+      "category": "Agence",
+      "platforms": [
+        "E-mail"
+      ],
+      "contact_channel": "Envoi du test de montage",
+      "status": "En attente",
+      "status_type": "waiting",
+      "response": "Test de montage renvoyé le vendredi 13/11/2026 vers 01 h 00 ; aucune réponse reçue à ce jour.",
+      "next_step": "Attendre leur retour. Le délai est encore normal au lundi 16/11/2026 ; ne pas relancer immédiatement.",
+      "opportunity": "Montage de vidéos verticales pour des restaurants et contenus food. Tarif annoncé : 35 € par vidéo courte ; volume initial évoqué de 25 vidéos par mois.",
+      "contact_date": "2026-11-13",
+      "notes": "Le test a été renvoyé dans la nuit de jeudi à vendredi, vers 01 h 00. Au lundi 16 novembre, le dossier reste en attente. Ne pas considérer l'absence de réponse comme un refus."
     }
   ],
   "prospecting_lessons": [
