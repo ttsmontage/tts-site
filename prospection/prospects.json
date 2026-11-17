@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-17",
   "description": "Suivi des prospects TTS Montage. La prospection directe auprès des créateurs gaming est mise en pause au profit des agences recrutant des monteurs à distance. Les agences sont suivies dans une catégorie dédiée avec les statuts En attente, Répondu et Pas répondu.",
   "prospects": [
     {
@@ -539,6 +539,22 @@
       "opportunity": "Montage de vidéos verticales pour des restaurants et contenus food. Tarif annoncé : 35 € par vidéo courte ; volume initial évoqué de 25 vidéos par mois.",
       "contact_date": "2026-11-13",
       "notes": "Le test a été renvoyé dans la nuit de jeudi à vendredi, vers 01 h 00. Au lundi 16 novembre, le dossier reste en attente. Ne pas considérer l'absence de réponse comme un refus."
+    },
+    {
+      "id": "24h-with",
+      "name": "24H WITH",
+      "category": "Agence",
+      "platforms": [
+        "Site de recrutement"
+      ],
+      "contact_channel": "Formulaire de candidature",
+      "status": "En attente",
+      "status_type": "waiting",
+      "response": "Candidature envoyée le 17/11/2026 ; en attente de réponse.",
+      "next_step": "Attendre un retour sur la candidature et les éventuelles étapes de sélection.",
+      "opportunity": "Montage de documentaires et contenus YouTube longs (environ 45 minutes ou plus), ainsi que de formats courts. Expérience déclarée sur des best-ofs YouTube de 10 à 20 minutes ; disponibilité pour les deux formats.",
+      "contact_date": "2026-11-17",
+      "notes": "Candidature envoyée via le formulaire de recrutement 24H WITH. Le formulaire demandait de préciser l'expérience en formats courts, formats longs (45 min et plus), ou les deux ; l'utilisateur a sélectionné les deux en s'appuyant sur son expérience de best-ofs de 10 à 20 minutes. Aucune réponse reçue pour le moment."
     }
   ],
   "prospecting_lessons": [
